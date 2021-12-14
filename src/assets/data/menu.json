@@ -1,72 +1,37 @@
 [
     {
-      "icon": "logo-apple-appstore",
-      "name": " Alert",
-      "redirectTo": "/alert"
+      "icon": "create-outline",
+      "name": " Clases",
+      "redirectTo": "/clases"
     },
     {
-      "icon": "american-football",
-      "name": " Action Sheet",
-      "redirectTo": "/action-sheet"
+      "icon": "time-outline",
+      "name": " Horarios",
+      "redirectTo": "/horarios"
     },
     {
-      "icon": "aperture",
-      "name": " Avatar",
-      "redirectTo": "/avatar"
+      "icon": "checkbox-outline",
+      "name": " Mis Reservas",
+      "redirectTo": "/mis-reservas"
     },
     {
-      "icon": "radio-button-on",
-      "name": " Botones",
-      "redirectTo": "/botones"
+      "icon": "trending-up",
+      "name": " Mis Resultados",
+      "redirectTo": "/mis-resultados"
     },
     {
-      "icon": "card",
-      "name": " Cards",
-      "redirectTo": "/cards"
+      "icon": "browsers-outline",
+      "name": " White Board",
+      "redirectTo": "/whiteboard"
     },
     {
-      "icon": "checkmark-circle-outline",
-      "name": " Checkbox",
-      "redirectTo": "/checkbox"
+      "icon": "timer-outline",
+      "name": " Timer",
+      "redirectTo": "/timer"
     },
     {
-      "icon": "calendar",
-      "name": " Date Piker / Date Format",
-      "redirectTo": "/date-time"
-    },
-    {
-      "icon": "add-circle",
-      "name": " Float Action Buttons",
-      "redirectTo": "/fabs"
-    },
-    {
-      "icon": "grid",
-      "name": " Grid",
-      "redirectTo": "/grid"
-    },
-    {
-      "icon": "arrow-down",
-      "name": " Infinity Scroll",
-      "redirectTo": "/infinity-scroll"
-    },
-    {
-      "icon": "text",
-      "name": " Input",
-      "redirectTo": "/ion-input"
-    },
-    {
-      "icon": "list",
-      "name": " List Slider",
-      "redirectTo": "/list-slider"
-    },
-    {
-      "icon": "hammer",
-      "name": " List Reorder",
-      "redirectTo": "/list-reorder"
-    },
-    {
-      "icon": "refresh",
-      "name": " Loading",
-      "redirectTo": "/loading"
+      "icon": "construct",
+      "name": " Administrador",
+      "redirectTo": "/administrador"
     }
   ]

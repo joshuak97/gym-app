@@ -9,7 +9,6 @@
        <ion-list *ngFor="let opcion of componentes">
         <ion-item [routerLink]="opcion.redirectTo"><ion-icon [name]="opcion.icon" slot="start" color="primary"></ion-icon><ion-label color="primary">{{opcion.name}}</ion-label></ion-item>
        </ion-list>
-
       </ion-menu-toggle>
      
     </ion-content>
