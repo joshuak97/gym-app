@@ -1,0 +1,14 @@
+<ion-header no-border="true" translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start"> 
+      <ion-menu-button color="primary" menu="first" *ngIf="inicio"></ion-menu-button>
+      <ion-back-button defaultHref="/" icon="chevron-back-outline" text="Atras" *ngIf="!inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="text-center">{{titulo|titlecase}}</ion-title>
+  <ion-buttons slot="end">
+    <ion-button color="primary">
+      <ion-icon name="person"></ion-icon>
+    </ion-button>
+  </ion-buttons>  
+  </ion-toolbar>
+</ion-header>
