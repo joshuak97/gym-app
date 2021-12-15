@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { Componente } from '../../interfaces/componente';
 import { DataService } from '../../services/data.service';
@@ -13,6 +14,7 @@ export class MenuComponent implements OnInit{
   componentes: Componente[];
 
   constructor(private menu: MenuController,
+              private route: ActivatedRoute,
               private service: DataService) {
 
    }
@@ -20,20 +22,15 @@ export class MenuComponent implements OnInit{
     this.getOpcionesMenu();
   }
 
-  
-  
   openFirst() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
   }
 
-  openEnd() {
-    this.menu.open('end');
-  }
-
-  openCustom() {
-    this.menu.enable(true, 'custom');
-    this.menu.open('custom');
+  cargarMenu() {
+    this.route.params.subscribe(params =>{
+    params['acceso'] && params['acceso'] === 'admin' ? this.getOpcionesMenuAdmin() : this.getOpcionesMenu();   
+    });
   }
 
   getOpcionesMenu() {
@@ -41,6 +38,12 @@ export class MenuComponent implements OnInit{
      this.componentes = opciones as Componente[];
    });
   }
+
+  getOpcionesMenuAdmin() {
+    this.service.getMenuOptsAdmin().then(opciones => {
+      this.componentes = opciones as Componente[];
+    });
+   }
 
 }
 

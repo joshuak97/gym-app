@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
-  { path: 'inicio', loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule) },
+  { 
+    path: '', redirectTo: 'inicio', pathMatch: 'full'
+  },
+  { path: 'inicio', loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule) 
+  },
   {
     path: 'clases',
     loadChildren: () => import('./pages/clases/clases.module').then( m => m.ClasesPageModule)
@@ -27,6 +30,10 @@ const routes: Routes = [
   {
     path: 'timer',
     loadChildren: () => import('./pages/timer/timer.module').then( m => m.TimerPageModule)
+  },
+  {
+    path: 'admin/:acceso',
+    loadChildren: () => import('./pages/admin/admin.module').then( m => m.AdminPageModule)
   }
 ];
 

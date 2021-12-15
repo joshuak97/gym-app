@@ -30,4 +30,14 @@ export class DataService {
   });
 }
 
+getMenuOptsAdmin() {
+  return new Promise((resolve, reject) => {
+    this.http.get('/assets/data/menu-admin.json').subscribe(res => {
+      resolve(res);
+  }, err => {
+    reject(err);
+  });
+});
+}
+
 }
