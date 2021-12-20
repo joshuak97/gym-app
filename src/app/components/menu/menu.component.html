@@ -5,26 +5,26 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
+
+<!-- opciones menu       -->
+      <ion-menu-toggle>
 <!-- mostrar menu principal -->      
       <ion-list>
-          <ion-item [routerLink]="" *ngIf="!menuPrincipal" (click)="mostrarMenuPrincipal()">
+          <ion-item routerLink="/inicio" *ngIf="!menuPrincipal" (click)="mostrarMenuPrincipal()">
             <ion-icon name="arrow-back" slot="start" color="primary">
             </ion-icon>
             <ion-label color="primary">Menu Principal</ion-label>
           </ion-item>
         </ion-list>
-<!-- opciones menu       -->
-      <ion-menu-toggle>
        <ion-list *ngFor="let opcion of componentes">
         <ion-item [routerLink]="opcion.redirectTo">
           <ion-icon [name]="opcion.icon" slot="start" color="primary"></ion-icon>
           <ion-label color="primary">{{opcion.name}}</ion-label>
         </ion-item>
        </ion-list>
-      </ion-menu-toggle>
-      <!-- mostrar menu principal -->      
+<!-- mostrar menu principal -->      
       <ion-list>
-        <ion-item [routerLink]="" *ngIf="!menuPrincipal" (click)="mostrarMenuPrincipal()">
+        <ion-item routerLink="/inicio" *ngIf="!menuPrincipal" (click)="mostrarMenuPrincipal()">
           <ion-icon name="arrow-back" slot="start" color="primary">
           </ion-icon>
           <ion-label color="primary">Volver</ion-label>
@@ -38,5 +38,6 @@
           <ion-label color="primary">Administrador </ion-label>
         </ion-item>
        </ion-list>   
+      </ion-menu-toggle>
     </ion-content>
   </ion-menu>

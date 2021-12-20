@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mis-resultados.page.scss'],
 })
 export class MisResultadosPage implements OnInit {
+  
+  titulo = 'Mis Resultados';
 
-  constructor() { }
+  constructor() {
+    //
+   }
 
-  ngOnInit() {
+  ngOnInit() {//
   }
 
 }

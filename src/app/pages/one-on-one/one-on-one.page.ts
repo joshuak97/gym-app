@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OneOnOnePage implements OnInit {
 
-  constructor() { }
+  titulo = 'One-On-One';
 
-  ngOnInit() {
+  constructor() {
+    //
+   }
+
+  ngOnInit() {//
   }
 
 }

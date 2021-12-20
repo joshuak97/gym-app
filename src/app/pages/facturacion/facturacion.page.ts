@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./facturacion.page.scss'],
 })
 export class FacturacionPage implements OnInit {
+  
+  titulo = 'Facturacion';
 
-  constructor() { }
+  constructor() {
+    //
+   }
 
-  ngOnInit() {
+  ngOnInit() {//
   }
 
 }

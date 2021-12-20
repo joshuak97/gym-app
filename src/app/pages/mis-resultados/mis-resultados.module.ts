@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { MisResultadosPageRoutingModule } from './mis-resultados-routing.module';
 
 import { MisResultadosPage } from './mis-resultados.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MisResultadosPageRoutingModule
+    MisResultadosPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [MisResultadosPage]
 })

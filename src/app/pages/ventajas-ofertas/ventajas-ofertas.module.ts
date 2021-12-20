@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { VentajasOfertasPageRoutingModule } from './ventajas-ofertas-routing.module';
 
 import { VentajasOfertasPage } from './ventajas-ofertas.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VentajasOfertasPageRoutingModule
+    VentajasOfertasPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [VentajasOfertasPage]
 })

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { InvitaGanaPageRoutingModule } from './invita-gana-routing.module';
 
 import { InvitaGanaPage } from './invita-gana.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InvitaGanaPageRoutingModule
+    InvitaGanaPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [InvitaGanaPage]
 })

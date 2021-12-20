@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformesPage implements OnInit {
 
-  constructor() { }
+  titulo = 'Informes';
 
-  ngOnInit() {
+  constructor() { 
+    //
+  }
+
+  ngOnInit() {//
   }
 
 }

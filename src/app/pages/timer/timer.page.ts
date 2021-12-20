@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimerPage implements OnInit {
 
-  constructor() { }
+  titulo = 'Timer';
 
-  ngOnInit() {
+  constructor() {
+    //
+   }
+
+  ngOnInit() {//
   }
 
 }

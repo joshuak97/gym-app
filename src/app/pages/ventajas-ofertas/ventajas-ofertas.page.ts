@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VentajasOfertasPage implements OnInit {
 
-  constructor() { }
+  titulo = 'Ventajas y Ofertas';
 
-  ngOnInit() {
+  constructor() {
+    //
+   }
+
+  ngOnInit() {//
   }
 
 }

@@ -55,12 +55,12 @@
       "redirectTo": "/avisos"
     },
     {
-      "icon": "mail-outline",
+      "icon": "heart-outline",
       "name": " Invita y gana",
       "redirectTo": "/invita-gana"
     },
     {
-      "icon": "kart-outline",
+      "icon": "cart-outline",
       "name": " Punto de Venta",
       "redirectTo": "/punto-venta"
     },

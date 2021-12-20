@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TimerPageRoutingModule } from './timer-routing.module';
 
 import { TimerPage } from './timer.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TimerPageRoutingModule
+    TimerPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [TimerPage]
 })

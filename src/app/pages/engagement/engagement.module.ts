@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { EngagementPageRoutingModule } from './engagement-routing.module';
 
 import { EngagementPage } from './engagement.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EngagementPageRoutingModule
+    EngagementPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [EngagementPage]
 })

@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PuntoVentaPage implements OnInit {
 
-  constructor() { }
+  titulo = 'Punto de Venta';
 
-  ngOnInit() {
+  constructor() { 
+    //
+  }
+
+  ngOnInit() {//
   }
 
 }

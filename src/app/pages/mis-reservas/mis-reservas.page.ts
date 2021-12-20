@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MisReservasPage implements OnInit {
 
-  constructor() { }
+  titulo = 'Mis Reservas';
 
-  ngOnInit() {
+  constructor() {
+    //
+   }
+
+  ngOnInit() {//
   }
 
 }

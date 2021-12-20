@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvitaGanaPage implements OnInit {
 
-  constructor() { }
+  titulo = 'Invita y Gana';
 
-  ngOnInit() {
+  constructor() { 
+    //
+  }
+
+  ngOnInit() {//
   }
 
 }

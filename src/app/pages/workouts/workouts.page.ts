@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkoutsPage implements OnInit {
 
-  constructor() { }
+  titulo = 'Workouts Page';
 
-  ngOnInit() {
+  constructor() {
+    //
+   }
+
+  ngOnInit() {//
   }
 
 }

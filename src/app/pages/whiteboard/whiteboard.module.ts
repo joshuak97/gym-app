@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { WhiteboardPageRoutingModule } from './whiteboard-routing.module';
 
 import { WhiteboardPage } from './whiteboard.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WhiteboardPageRoutingModule
+    WhiteboardPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [WhiteboardPage]
 })

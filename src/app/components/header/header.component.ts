@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   
   this.menu.enable(true, 'first');
-  if(this.titulo==""){
+  if(this.titulo === '' || this.titulo === 'Dashboard'){
     this.inicio=true;
   } else {
     this.inicio=false;  
