@@ -32,8 +32,56 @@ const routes: Routes = [
     loadChildren: () => import('./pages/timer/timer.module').then( m => m.TimerPageModule)
   },
   {
-    path: 'admin/:acceso',
-    loadChildren: () => import('./pages/admin/admin.module').then( m => m.AdminPageModule)
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'informes',
+    loadChildren: () => import('./pages/informes/informes.module').then( m => m.InformesPageModule)
+  },
+  {
+    path: 'calendario',
+    loadChildren: () => import('./pages/calendario/calendario.module').then( m => m.CalendarioPageModule)
+  },
+  {
+    path: 'clientes',
+    loadChildren: () => import('./pages/clientes/clientes.module').then( m => m.ClientesPageModule)
+  },
+  {
+    path: 'workouts',
+    loadChildren: () => import('./pages/workouts/workouts.module').then( m => m.WorkoutsPageModule)
+  },
+  {
+    path: 'one-on-one',
+    loadChildren: () => import('./pages/one-on-one/one-on-one.module').then( m => m.OneOnOnePageModule)
+  },
+  {
+    path: 'configuraciones',
+    loadChildren: () => import('./pages/configuraciones/configuraciones.module').then( m => m.ConfiguracionesPageModule)
+  },
+  {
+    path: 'facturacion',
+    loadChildren: () => import('./pages/facturacion/facturacion.module').then( m => m.FacturacionPageModule)
+  },
+  {
+    path: 'engagement',
+    loadChildren: () => import('./pages/engagement/engagement.module').then( m => m.EngagementPageModule)
+  },
+  {
+    path: 'avisos',
+    loadChildren: () => import('./pages/avisos/avisos.module').then( m => m.AvisosPageModule)
+  },
+  {
+    path: 'invita-gana',
+    loadChildren: () => import('./pages/invita-gana/invita-gana.module').then( m => m.InvitaGanaPageModule)
+  },
+  {
+    path: 'punto-venta',
+    loadChildren: () => import('./pages/punto-venta/punto-venta.module').then( m => m.PuntoVentaPageModule)
+  },
+  {
+    path: 'ventajas-ofertas',
+    loadChildren: () => import('./pages/ventajas-ofertas/ventajas-ofertas.module').then( m => m.VentajasOfertasPageModule)
   }
 ];
 

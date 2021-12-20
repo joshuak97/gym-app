@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clases.page.scss'],
 })
 export class ClasesPage implements OnInit {
+  titulo = 'Clases';
 
-  constructor() { }
+  constructor() {
+    //
+   }
 
-  ngOnInit() {
+  ngOnInit() {//
   }
 
 }

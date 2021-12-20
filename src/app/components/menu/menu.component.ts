@@ -11,6 +11,8 @@ import { DataService } from '../../services/data.service';
 })
 export class MenuComponent implements OnInit{
 
+  menuPrincipal = true;
+  tituloMenu = 'Menu Principal';
   componentes: Componente[];
 
   constructor(private menu: MenuController,
@@ -31,6 +33,18 @@ export class MenuComponent implements OnInit{
     this.route.params.subscribe(params =>{
     params['acceso'] && params['acceso'] === 'admin' ? this.getOpcionesMenuAdmin() : this.getOpcionesMenu();   
     });
+  }
+
+  mostrarMenuPrincipal() {
+    this.menuPrincipal = true;
+    this.tituloMenu = 'Menu Principal';
+    this.getOpcionesMenu();
+  }
+
+  mostrarMenuAdministrador() {
+    this.menuPrincipal = false;
+    this.tituloMenu = 'Menu Administrador';
+    this.getOpcionesMenuAdmin();
   }
 
   getOpcionesMenu() {

@@ -1,7 +1,72 @@
   [
     {
-      "icon": "create-outline",
-      "name": " Clases",
-      "redirectTo": "/clases"
+      "icon": "podium-outline",
+      "name": " Dashboard",
+      "redirectTo": "/dashboard"
+    },
+    {
+      "icon": "analytics-outline",
+      "name": " Informes",
+      "redirectTo": "/informes"
+    },
+    {
+      "icon": "calendar-outline",
+      "name": " Calendario",
+      "redirectTo": "/calendario"
+    },
+    {
+      "icon": "people-outline",
+      "name": " Clientes",
+      "redirectTo": "/clientes"
+    },
+    {
+      "icon": "flash-outline",
+      "name": " Workouts",
+      "redirectTo": "/workouts"
+    },
+    {
+      "icon": "document-outline",
+      "name": " One-one-one",
+      "redirectTo": "/one-on-one"
+    },
+    {
+      "icon": "settings-outline",
+      "name": " Configuraciones",
+      "redirectTo": "/configuraciones"
+    },
+    {
+      "icon": "cash-outline",
+      "name": " Facturación",
+      "redirectTo": "/informes"
+    },
+    {
+      "icon": "mail-outline",
+      "name": " Engagement",
+      "redirectTo": "/engagement"
+    },
+    {
+      "icon": "browsers-outline",
+      "name": " Landing Page",
+      "redirectTo": ""
+    },
+    {
+      "icon": "flag-outline",
+      "name": " Avisos",
+      "redirectTo": "/avisos"
+    },
+    {
+      "icon": "mail-outline",
+      "name": " Invita y gana",
+      "redirectTo": "/invita-gana"
+    },
+    {
+      "icon": "kart-outline",
+      "name": " Punto de Venta",
+      "redirectTo": "/punto-venta"
+    },
+    {
+      "icon": "keypad-outline",
+      "name": " Ventajas y Ofertas",
+      "redirectTo": "/engagement"
     }
   ]
