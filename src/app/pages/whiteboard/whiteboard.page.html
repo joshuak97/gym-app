@@ -1,5 +1,55 @@
 <app-header titulo="{{titulo}}"></app-header>
 
 <ion-content>
-
+    <!--              Selector de programa                -->
+    <div class="ion-margin-top ion-padding">
+        <ion-label>Programa:</ion-label>
+        <ion-select (ionChange)="mostrarResultadosWhiteboard()" [(ngModel)]="programaSelected" placeholder="Seleccione un programa">
+            <ion-select-option value="1">CROSSFIT</ion-select-option>
+            <ion-select-option value="2">CROSSFIT KIDS</ion-select-option>
+            <ion-select-option value="3">CYCLING</ion-select-option>
+        </ion-select>
+    </div>
+    <!--             Selector de fecha             -->
+    <div class="ion-padding-horizontal">
+        <ion-label>Fecha:</ion-label>
+        <ion-datetime (ionChange)="mostrarResultadosWhiteboard()" placeholder="DD/MM/YYYY" [(ngModel)]="fechaSelected" id="fecha" display-format="DD/MMMM/YYYY"></ion-datetime>
+    </div>
+<!--                   WhiteBoard-->
+    <ion-card>
+        <ion-item color="danger" (click)="mostrarWthiteBoard();">
+            <ion-label color="light"> {{fechaSelected | date: 'EEEE, MMMM d, y' || 'No se encontraron resultados' }}</ion-label>
+            <ion-icon *ngIf="visualizarWhiteBoard" name="arrow-up-circle" color="light" slot="end"></ion-icon>
+            <ion-icon *ngIf="!visualizarWhiteBoard" name="arrow-down-circle" color="light" slot="end"></ion-icon>
+        </ion-item>
+        <ion-card-content *ngIf="visualizarWhiteBoard">
+            <div>
+                <div><strong>Warmup:</strong></div>
+                <p> 10 min Amrap</p>
+                <p> 20 jumping jack</p>
+                <p> 20 jalon en trx</p>
+                <p> 10/10 DB hing pull</p>
+            </div>
+            <div>
+                <div><strong>Custom Metcon:</strong></div>
+                <p> This is content, without any paragraph or header tags,
+                    within an ion-card-content element.
+                </p>
+                <p> This is content, without any paragraph or header tags,
+                    within an ion-card-content element.</p>
+                <p> This is content, without any paragraph or header tags,
+                    within an ion-card-content element.</p>
+            </div>
+            <div>
+                <div><strong>Vuelta a la cama:</strong></div>
+                <p> This is content, without any paragraph or header tags,
+                    within an ion-card-content element.
+                </p>
+                <p> This is content, without any paragraph or header tags,
+                    within an ion-card-content element.</p>
+                <p> This is content, without any paragraph or header tags,
+                    within an ion-card-content element.</p>
+            </div>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

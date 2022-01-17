@@ -22,14 +22,6 @@
           <ion-label color="primary">{{opcion.name}}</ion-label>
         </ion-item>
        </ion-list>
-<!-- mostrar menu principal -->      
-      <ion-list>
-        <ion-item routerLink="/inicio" *ngIf="!menuPrincipal" (click)="mostrarMenuPrincipal()">
-          <ion-icon name="arrow-back" slot="start" color="primary">
-          </ion-icon>
-          <ion-label color="primary">Volver</ion-label>
-        </ion-item>
-      </ion-list>
 <!-- mostrar menu de Administrador -->
       <ion-list>
         <ion-item routerLink="/dashboard" *ngIf="menuPrincipal" (click)="mostrarMenuAdministrador()">
@@ -37,7 +29,7 @@
           </ion-icon>
           <ion-label color="primary">Administrador </ion-label>
         </ion-item>
-       </ion-list>   
+       </ion-list>
       </ion-menu-toggle>
     </ion-content>
   </ion-menu>

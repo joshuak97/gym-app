@@ -7,14 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
  
-  componentes = [];
+  avisos = [];
 
-  constructor() {
-    // Constructor Vacio
-   }
+  visualizarAvisos = true;
+  visualizarClases = false;
+  fechaSelected: string;
+  claseSelected: number;
+
+  constructor() {}
 
   ngOnInit() {
   // Metodo vacio
+  }
+
+  mostrarAvisos() {
+    this.visualizarAvisos = !this.visualizarAvisos;
+  }
+
+  mostrarClases(){
+    this.visualizarClases = !this.visualizarClases;
   }
 
 }
