@@ -24,6 +24,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/mis-resultados/mis-resultados.module').then( m => m.MisResultadosPageModule)
   },
   {
+    path: 'benchmark-metcon',
+    loadChildren: () => import('./pages/benchmark-metcon/benchmark-metcon.module').then( m => m.MisResultadosPageModule)
+  },
+  {
+    path: 'gymnastic',
+    loadChildren: () => import('./pages/gymnastic/gymnastic.module').then( m => m.GymnasticPageModule)
+  },
+  {
+    path: 'weightlifting',
+    loadChildren: () => import('./pages/weightlifting/weightlifting.module').then( m => m.WeightliftingPageModule)
+  },
+  {
     path: 'whiteboard',
     loadChildren: () => import('./pages/whiteboard/whiteboard.module').then( m => m.WhiteboardPageModule)
   },

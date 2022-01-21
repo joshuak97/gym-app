@@ -20,6 +20,21 @@
       "redirectTo": "/mis-resultados"
     },
     {
+      "icon": "trending-up",
+      "name": "Benchmark Metcon",
+      "redirectTo": "/benchmark-metcon"
+    },
+    {
+      "icon": "trending-up",
+      "name": "Gymnastic",
+      "redirectTo": "/gymnastic"
+    },
+    {
+      "icon": "trending-up",
+      "name": "Weightlifting",
+      "redirectTo": "/weightlifting"
+    },
+    {
       "icon": "browsers-outline",
       "name": " White Board",
       "redirectTo": "/whiteboard"

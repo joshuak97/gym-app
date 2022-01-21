@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MisResultadosPage implements OnInit {
   
   titulo = 'Mis Resultados';
+  visualizarWhiteBoard = false;
+  componente: any;
 
   constructor() {
     //
@@ -15,5 +17,6 @@ export class MisResultadosPage implements OnInit {
 
   ngOnInit() {//
   }
+  
 
 }

@@ -1,0 +1,38 @@
+<app-header titulo=""></app-header>
+
+<ion-content>
+
+    <!--              Selector de reservas                -->
+    <div class="ion-margin-top ion-padding">
+        <ion-label class="strong">Gymnastic</ion-label>
+        <ion-select placeholder="Seleccione un cliente">
+            <ion-select-option value="1">Emir Morales aaaaaaaaa</ion-select-option>
+            <ion-select-option value="2">Yareth Barrientos</ion-select-option>
+            <ion-select-option value="3">Ximena Presa Juarez</ion-select-option>
+        </ion-select>
+        <div  class="ion-text-end">
+        <ion-button size="small" color="light"> +</ion-button>
+    </div>
+        <ion-select placeholder="Seleccione un componente"> 
+            <ion-select-option value="1">1 mile run</ion-select-option>
+            <ion-select-option value="2">100 meters run</ion-select-option>
+            <ion-select-option value="3">1000 meters row</ion-select-option>
+        </ion-select>
+    </div>
+    
+    <div class="ion-margin-top ion-padding">
+        <ion-card>
+            <ion-item color="danger">
+                <ion-label color="light"> {{componente || 'No se encontraron resultados' }}</ion-label>
+                <ion-icon  *ngIf="visualizarWhiteBoard" name="arrow-up-circle" color="light" slot="end"></ion-icon>
+                <ion-icon  *ngIf="!visualizarWhiteBoard" name="arrow-down-circle" color="light" slot="end"></ion-icon>
+            </ion-item>
+            <ion-card-header>
+            </ion-card-header>
+            <ion-card-content  *ngIf="visualizarWhiteBoard">
+                <p class="strong">Componente</p>
+                    <p class="strong">Resultado</p>
+            </ion-card-content>
+        </ion-card>
+</div>
+</ion-content>
