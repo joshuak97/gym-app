@@ -9,11 +9,23 @@ export class MisReservasPage implements OnInit {
 
   titulo = 'Mis Reservas';
 
-  constructor() {
-    //
-   }
+  visualizarAvisos = true;
+  visualizarClases = false;
+  fechaSelected: string;
+  claseSelected: number;
 
-  ngOnInit() {//
+  constructor() {}
+
+  ngOnInit() {
+  // Metodo vacio
+  }
+
+  mostrarAvisos() {
+    this.visualizarAvisos = !this.visualizarAvisos;
+  }
+
+  mostrarClases(){
+    this.visualizarClases = !this.visualizarClases;
   }
 
 }
