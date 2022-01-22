@@ -94,6 +94,38 @@ const routes: Routes = [
   {
     path: 'ventajas-ofertas',
     loadChildren: () => import('./pages/ventajas-ofertas/ventajas-ofertas.module').then( m => m.VentajasOfertasPageModule)
+  },
+  {
+    path: 'cuenta',
+    loadChildren: () => import('./pages/cuenta/cuenta.module').then( m => m.CuentaPageModule)
+  },
+  {
+    path: 'programas',
+    loadChildren: () => import('./pages/programas/programas.module').then( m => m.ProgramasPageModule)
+  },
+  {
+    path: 'horarios-admin',
+    loadChildren: () => import('./pages/horarios-admin/horarios-admin.module').then( m => m.HorariosAdminPageModule)
+  },
+  {
+    path: 'cuotas',
+    loadChildren: () => import('./pages/cuotas/cuotas.module').then( m => m.CuotasPageModule)
+  },
+  {
+    path: 'descuentos',
+    loadChildren: () => import('./pages/descuentos/descuentos.module').then( m => m.DescuentosPageModule)
+  },
+  {
+    path: 'medios-pago',
+    loadChildren: () => import('./pages/medios-pago/medios-pago.module').then( m => m.MediosPagoPageModule)
+  },
+  {
+    path: 'impuestos',
+    loadChildren: () => import('./pages/impuestos/impuestos.module').then( m => m.ImpuestosPageModule)
+  },
+  {
+    path: 'terminos-condiciones',
+    loadChildren: () => import('./pages/terminos-condiciones/terminos-condiciones.module').then( m => m.TerminosCondicionesPageModule)
   }
 ];
 

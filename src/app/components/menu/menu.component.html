@@ -7,7 +7,6 @@
     <ion-content>
 
 <!-- opciones menu       -->
-      <ion-menu-toggle>
 <!-- mostrar menu principal -->      
       <ion-list>
           <ion-item routerLink="/inicio" *ngIf="!menuPrincipal" (click)="mostrarMenuPrincipal()">
@@ -16,11 +15,23 @@
             <ion-label color="primary">Menu Principal</ion-label>
           </ion-item>
         </ion-list>
-       <ion-list *ngFor="let opcion of componentes">
-        <ion-item [routerLink]="opcion.redirectTo">
+       <ion-list *ngFor="let opcion of componentes;let i = index">
+<!--           Se muestra si tiene hijos (Es dropdown).-->
+        <ion-item  *ngIf="opcion.hijos.length>0" (click)="desplegar(i)">
           <ion-icon [name]="opcion.icon" slot="start" color="primary"></ion-icon>
           <ion-label color="primary">{{opcion.name}}</ion-label>
         </ion-item>
+           <!--           Se muestra si no tiene hijos (No es dropdown).-->
+           <ion-item [routerLink]="opcion.redirectTo" *ngIf="opcion.hijos.length == 0" (click)="cerrarMenu()">
+               <ion-icon [name]="opcion.icon" slot="start" color="primary"></ion-icon>
+               <ion-label color="primary">{{opcion.name}}</ion-label>
+           </ion-item>
+               <ion-list *ngIf="opcion.hijosVisibles">
+                   <ion-item *ngFor="let subOpcion of opcion.hijos" [routerLink]="subOpcion.redirectTo" (click)="cerrarMenu()">
+                       <ion-icon [name]="subOpcion.icon" slot="start" color="primary"></ion-icon>
+                       <ion-label color="primary">{{subOpcion.name}}</ion-label>
+                   </ion-item>
+           </ion-list>
        </ion-list>
 <!-- mostrar menu de Administrador -->
       <ion-list>
@@ -30,6 +41,5 @@
           <ion-label color="primary">Administrador </ion-label>
         </ion-item>
        </ion-list>
-      </ion-menu-toggle>
     </ion-content>
   </ion-menu>

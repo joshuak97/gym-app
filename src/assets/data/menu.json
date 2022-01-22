@@ -2,46 +2,67 @@
     {
       "icon": "create-outline",
       "name": " Clases",
-      "redirectTo": "/clases"
+      "redirectTo": "/clases",
+      "hijos": [],
+      "hijosVisibles": false
+
     },
     {
       "icon": "time-outline",
       "name": " Horarios",
-      "redirectTo": "/horarios"
+      "redirectTo": "/horarios",
+      "hijos": [],
+      "hijosVisibles": false
     },
     {
       "icon": "checkbox-outline",
       "name": " Mis Reservas",
-      "redirectTo": "/mis-reservas"
+      "redirectTo": "/mis-reservas",
+      "hijos": [],
+      "hijosVisibles": false
     },
     {
-      "icon": "trending-up",
-      "name": " Mis Resultados",
-      "redirectTo": "/mis-resultados"
-    },
-    {
-      "icon": "trending-up",
-      "name": "Benchmark Metcon",
-      "redirectTo": "/benchmark-metcon"
-    },
-    {
-      "icon": "trending-up",
-      "name": "Gymnastic",
-      "redirectTo": "/gymnastic"
-    },
-    {
-      "icon": "trending-up",
-      "name": "Weightlifting",
-      "redirectTo": "/weightlifting"
+    "icon": "trending-up",
+    "name": " Mis Resultados",
+    "redirectTo": "",
+    "hijos": [
+      {
+        "icon": "radio-button-off-outline",
+        "name": "Benchmark Metcon",
+        "redirectTo": "/benchmark-metcon",
+        "padre": "",
+        "hijos": [],
+        "hijosVisibles": false
+      },
+      {
+        "icon": "radio-button-off-outline",
+        "name": "Gymnastic",
+        "redirectTo": "/gymnastic",
+        "hijos": [],
+        "hijosVisibles": false
+      },
+      {
+        "icon": "radio-button-off-outline",
+        "name": "Weightlifting",
+        "redirectTo": "/weightlifting",
+        "hijos": [],
+        "hijosVisibles": false
+      }
+    ],
+    "hijosVisibles": false
     },
     {
       "icon": "browsers-outline",
       "name": " White Board",
-      "redirectTo": "/whiteboard"
+      "redirectTo": "/whiteboard",
+      "hijos": [],
+      "hijosVisibles": false
     },
     {
       "icon": "timer-outline",
       "name": " Timer",
-      "redirectTo": "/timer"
+      "redirectTo": "/timer",
+      "hijos": [],
+      "hijosVisibles": false
     }
   ]

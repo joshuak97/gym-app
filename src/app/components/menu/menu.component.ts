@@ -24,9 +24,8 @@ export class MenuComponent implements OnInit{
     this.getOpcionesMenu();
   }
 
-  openFirst() {
-    this.menu.enable(true, 'first');
-    this.menu.open('first');
+  cerrarMenu() {
+    this.menu.close('first').then();
   }
 
   cargarMenu() {
@@ -59,6 +58,9 @@ export class MenuComponent implements OnInit{
     });
    }
 
+  desplegar(i: number) {
+    this.componentes[i].hijosVisibles = !this.componentes[i].hijosVisibles;
+  }
 }
 
 
