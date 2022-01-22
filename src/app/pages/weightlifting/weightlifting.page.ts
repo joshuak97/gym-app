@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeightliftingPage implements OnInit {
   
-  titulo = 'weightlifting';
+  titulo = 'Weightlifting';
   visualizarWhiteBoard = false;
   componente: any;
 

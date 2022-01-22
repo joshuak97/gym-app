@@ -1,4 +1,4 @@
-<app-header titulo=""></app-header>
+<app-header titulo="{{titulo}}"></app-header>
 
 <ion-content>
 
@@ -30,8 +30,44 @@
             <ion-card-header>
             </ion-card-header>
             <ion-card-content  *ngIf="visualizarWhiteBoard">
-                <p class="strong">Componente</p>
-                    <p class="strong">Resultado</p>
+                <ion-grid class="ion-text-left">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">Componente</ion-text>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-text class="strong">Resultado</ion-text>
+                        </ion-col>
+
+                       
+                        <ion-col>
+                            <ion-text class="strong"></ion-text>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-text>
+                                100 meters run
+                            </ion-text>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-text>
+                               30:20
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text>
+                                <div class="ion-text-end">
+                                    <ion-button size="small" color="light"> +</ion-button>
+                                </div>
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+
+                </ion-grid>
             </ion-card-content>
         </ion-card>
 </div>
