@@ -1,0 +1,145 @@
+<app-header titulo="{{titulo}}"></app-header>
+
+<ion-content>
+
+    <!--              Selector de reservas                -->
+    <div class="ion-margin-top ion-padding">
+        <ion-list-header>Clientes en riesgo</ion-list-header>
+        <ion-card>
+            <ion-card-content class="ion-text-center">
+                <ion-grid class="ion-text-center">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">BAJO</ion-text>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-text >
+                               9
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                Sin reservar entre 7 y 10 días
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-content class="ion-text-center">
+                <ion-grid class="ion-text-center">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">MODERADO</ion-text>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-text >
+                               1
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                Sin reservar entre 11 y 15 días
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-content class="ion-text-center">
+                <ion-grid class="ion-text-center">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">ALTO</ion-text>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-text >
+                               7
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                Sin reservar entre 16 y 31 días
+            </ion-card-content>
+        </ion-card>
+<!--Tabla clientes-->
+        <ion-card>
+            
+            <ion-card-header>
+                <ion-card-title>Clientes</ion-card-title>
+              </ion-card-header>
+            <ion-card-content>
+                <ion-card>
+                    <ion-card-content class="ion-text-left">
+                <ion-grid class="ion-text-left">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">Nombre</ion-text>
+                        </ion-col>
+    
+                        <ion-col>
+                            <ion-text class="strong">Email</ion-text>
+                        </ion-col>
+    
+                        <ion-col>
+                            <ion-text class="strong">Telefono</ion-text>
+                        </ion-col>
+    
+                        <ion-col>
+                            <ion-text class="strong">Riesgo</ion-text>
+                        </ion-col>
+                    <ion-col>
+                        <ion-text class="strong">Ultima Reserva</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-text class="strong"></ion-text>
+                    </ion-col>
+                    </ion-row>
+    
+    
+                    <ion-row>
+                        <ion-col>
+                            <ion-text>
+                               José Pablo Mendoza
+                            </ion-text>
+                        </ion-col>
+    
+                        <ion-col>
+                            <ion-text>
+                                pablo123@123.com
+                            </ion-text>
+                        </ion-col>
+    
+                        <ion-col>
+                            <ion-text class="strong">
+                                4421212121
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">
+                                Alto
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">
+                                3 semanas y 6 dias
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text>
+                                <div class="ion-text-end">
+                                    <ion-button size="small" color="light"> +</ion-button>
+                                </div>
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+    
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+            </ion-card-content>
+        </ion-card>
+        </div>
+</ion-content>

@@ -1,0 +1,84 @@
+<app-header titulo="{{titulo}}"></app-header>
+
+<ion-content>
+
+    <!--              Selector de reservas                -->
+    <div class="ion-margin-top ion-padding">
+        <ion-list-header>Clientes activos</ion-list-header>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>Filtrar</ion-card-subtitle>
+              </ion-card-header>
+              <ion-list>
+                <ion-list-header>*Años</ion-list-header>
+                <ion-item>
+                  <ion-label>2021</ion-label>
+                  <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+                </ion-item>
+                <ion-item>
+                    <ion-label>2022</ion-label>
+                    <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+                  </ion-item>
+                  <div class="ion-margin-top ion-padding">
+                    <ion-button color="danger">Filtrar</ion-button>
+                  </div>
+              </ion-list>
+    </ion-card>
+        <ion-card>
+            <ion-card-content class="ion-text-center">
+                <ion-grid class="ion-text-center">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">MINIMA</ion-text>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-text >
+                               283
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-content class="ion-text-center">
+                <ion-grid class="ion-text-center">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">MÁXIMA</ion-text>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-text >
+                               438
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-content class="ion-text-center">
+                <ion-grid class="ion-text-center">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">MEDIA</ion-text>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-text >
+                               355
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+        </div>
+</ion-content>

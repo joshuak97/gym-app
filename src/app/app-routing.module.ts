@@ -124,6 +124,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/impuestos/impuestos.module').then( m => m.ImpuestosPageModule)
   },
   {
+    path: 'metricas',
+    loadChildren: () => import('./pages/metricas/metricas.module').then( m => m.MetricasPageModule)
+  },
+  {
+    path: 'clientes-en-riesgo',
+    loadChildren: () => import('./pages/clientes-en-riesgo/clientes-en-riesgo.module').then( m => m.ClientesEnRiesgoPageModule)
+  },
+  {
+    path: 'clientes-activos',
+    loadChildren: () => import('./pages/clientes-activos/clientes-activos.module').then( m => m.ClientesActivosPageModule)
+  },
+  {
     path: 'terminos-condiciones',
     loadChildren: () => import('./pages/terminos-condiciones/terminos-condiciones.module').then( m => m.TerminosCondicionesPageModule)
   }

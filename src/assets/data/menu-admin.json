@@ -10,7 +10,28 @@
       "icon": "analytics-outline",
       "name": " Informes",
       "redirectTo": "/informes",
-      "hijos": [],
+      "hijos": [ {
+        "icon": "radio-button-off-outline",
+        "name": " Métricas",
+        "redirectTo": "/metricas",
+        "hijos": [],
+        "hijosVisibles": false
+      },
+       {
+          "icon": "radio-button-off-outline",
+          "name": " Clientes en riesgo",
+          "redirectTo": "/clientes-en-riesgo",
+          "hijos": [],
+          "hijosVisibles": false
+        },     
+          {
+          "icon": "radio-button-off-outline",
+          "name": " Clientes activos",
+          "redirectTo": "/clientes-activos",
+          "hijos": [],
+          "hijosVisibles": false
+        }
+    ],
       "hijosVisibles": false
     },
     {
