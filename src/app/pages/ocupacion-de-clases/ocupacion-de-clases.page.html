@@ -1,0 +1,140 @@
+<app-header titulo="{{titulo}}"></app-header>
+
+<ion-content>
+    <div class="ion-margin-top ion-padding">
+        <ion-list-header>Ocupación de clases</ion-list-header>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>Filtrar</ion-card-subtitle>
+              </ion-card-header>
+              <div class="ion-margin-top ion-padding">
+                <ion-label>Programa:</ion-label>
+                <ion-select placeholder="Seleccione un programa">
+                <ion-select-option value="1">CROSSFIT</ion-select-option>
+                <ion-select-option value="2">CROSSFIT KIDS</ion-select-option>
+                <ion-select-option value="3">CYCLING</ion-select-option>
+                </ion-select>
+            </div>
+                       <!--             Selector de fecha             -->
+    <div class="ion-padding-horizontal">
+        <ion-label>Fecha de inicio</ion-label>
+        <ion-datetime  placeholder="DD/MM/YYYY" id="fecha" display-format="DD/MMMM/YYYY"></ion-datetime>
+    </div>
+    <div class="ion-padding-horizontal">
+        <ion-label>Fecha de finalización</ion-label>
+        <ion-datetime  placeholder="DD/MM/YYYY" id="fecha" display-format="DD/MMMM/YYYY"></ion-datetime>
+    </div>
+         
+          <div class="ion-margin-top ion-padding">
+          <ion-button color="danger">Filtrar</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-content class="ion-text-center">
+            <ion-grid class="ion-text-center">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">MINIMA</ion-text>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                           0%
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-content class="ion-text-center">
+            <ion-grid class="ion-text-center">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">MAXIMA</ion-text>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                            14%
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-content class="ion-text-center">
+            <ion-grid class="ion-text-center">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">MEDIA</ion-text>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                           1%
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+    <!--Tabla facturas-->
+    <ion-card>
+            
+        <ion-card-header>
+            <ion-card-title>Programas</ion-card-title>
+          </ion-card-header>
+        <ion-card-content>
+            <ion-card>
+                <ion-card-content class="ion-text-left">
+            <ion-grid class="ion-text-left">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">Programa</ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">Ocupación</ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong"></ion-text>
+                    </ion-col>
+                </ion-row>
+
+
+                <ion-row>
+                    <ion-col>
+                        <ion-text>
+                           Mensual
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text>
+                            132
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">
+                            $4421212121
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+        </ion-card-content>
+    </ion-card>
+    </div>
+</ion-content>

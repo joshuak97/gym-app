@@ -136,6 +136,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/clientes-activos/clientes-activos.module').then( m => m.ClientesActivosPageModule)
   },
   {
+    path: 'ausentes',
+    loadChildren: () => import('./pages/ausentes/ausentes.module').then( m => m.AusentesPageModule)
+  },
+  {
+    path: 'facturacion-admin',
+    loadChildren: () => import('./pages/facturacion-admin/facturacionadmin.module').then( m => m.FacturacionAdminPageModule)
+  },
+  {
+    path: 'ocupacion-de-clases',
+    loadChildren: () => import('./pages/ocupacion-de-clases/ocupacion-de-clases.module').then( m => m.FacturacionAdminPageModule)
+  },
+  {
     path: 'terminos-condiciones',
     loadChildren: () => import('./pages/terminos-condiciones/terminos-condiciones.module').then( m => m.TerminosCondicionesPageModule)
   }

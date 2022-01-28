@@ -30,6 +30,27 @@
           "redirectTo": "/clientes-activos",
           "hijos": [],
           "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Ausentes",
+          "redirectTo": "/ausentes",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Facturación",
+          "redirectTo": "/facturacion-admin",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Ocupación de clases",
+          "redirectTo": "/ocupacion-de-clases",
+          "hijos": [],
+          "hijosVisibles": false
         }
     ],
       "hijosVisibles": false

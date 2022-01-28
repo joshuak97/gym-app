@@ -1,0 +1,134 @@
+<app-header titulo="{{titulo}}"></app-header>
+
+<ion-content>
+    <div class="ion-margin-top ion-padding">
+        <ion-list-header>Facturación</ion-list-header>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>Filtrar</ion-card-subtitle>
+              </ion-card-header>
+                       <!--             Selector de fecha             -->
+    <div class="ion-padding-horizontal">
+        <ion-label>Fecha de inicio</ion-label>
+        <ion-datetime  placeholder="DD/MM/YYYY" id="fecha" display-format="DD/MMMM/YYYY"></ion-datetime>
+    </div>
+    <div class="ion-padding-horizontal">
+        <ion-label>Fecha de finalización</ion-label>
+        <ion-datetime  placeholder="DD/MM/YYYY" id="fecha" display-format="DD/MMMM/YYYY"></ion-datetime>
+    </div>
+         
+          <div class="ion-margin-top ion-padding">
+          <ion-button color="danger">Filtrar</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-content class="ion-text-center">
+            <ion-grid class="ion-text-center">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">MINIMA</ion-text>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                           $9998.00
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            dic/2021
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-content class="ion-text-center">
+            <ion-grid class="ion-text-center">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">MAXIMA</ion-text>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                           $100000.00
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            nov/2021
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-content class="ion-text-center">
+            <ion-grid class="ion-text-center">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">MEDIA</ion-text>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                           $70000.00
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+    <!--Tabla facturas-->
+    <ion-card>
+            
+        <ion-card-header>
+            <ion-card-title>Facturas por cuota</ion-card-title>
+          </ion-card-header>
+        <ion-card-content>
+            <ion-card>
+                <ion-card-content class="ion-text-left">
+            <ion-grid class="ion-text-left">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">Periodo de fact.</ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">Facturas</ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">Total mes</ion-text>
+                    </ion-col>
+                </ion-row>
+
+
+                <ion-row>
+                    <ion-col>
+                        <ion-text>
+                           Mensual
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text>
+                            132
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">
+                            $4421212121
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+        </ion-card-content>
+    </ion-card>
+    </div>
+</ion-content>
