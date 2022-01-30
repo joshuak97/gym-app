@@ -100,31 +100,31 @@
       /* harmony import */
 
 
-      var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! tslib */
       64762);
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! @angular/common */
       38583);
       /* harmony import */
 
 
-      var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! @angular/forms */
       3679);
       /* harmony import */
 
 
-      var _ionic_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      var _ionic_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! @ionic/angular */
       80476);
       /* harmony import */
@@ -139,13 +139,19 @@
       var _mis_resultados_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./mis-resultados.page */
       50201);
+      /* harmony import */
+
+
+      var _components_components_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ../../components/components.module */
+      45642);
 
       var _MisResultadosPageModule = function MisResultadosPageModule() {
         _classCallCheck(this, MisResultadosPageModule);
       };
 
-      _MisResultadosPageModule = (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule)({
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormsModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.IonicModule, _mis_resultados_routing_module__WEBPACK_IMPORTED_MODULE_0__.MisResultadosPageRoutingModule],
+      _MisResultadosPageModule = (0, tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_4__.NgModule)({
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_7__.IonicModule, _mis_resultados_routing_module__WEBPACK_IMPORTED_MODULE_0__.MisResultadosPageRoutingModule, _components_components_module__WEBPACK_IMPORTED_MODULE_2__.ComponentsModule],
         declarations: [_mis_resultados_page__WEBPACK_IMPORTED_MODULE_1__.MisResultadosPage]
       })], _MisResultadosPageModule);
       /***/
@@ -204,6 +210,9 @@
       var _MisResultadosPage = /*#__PURE__*/function () {
         function MisResultadosPage() {
           _classCallCheck(this, MisResultadosPage);
+
+          this.titulo = 'Mis Resultados';
+          this.visualizarWhiteBoard = false; //
         }
 
         _createClass(MisResultadosPage, [{
@@ -258,7 +267,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-title>mis-resultados</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>\n";
+      __webpack_exports__["default"] = "<app-header titulo=\"{{titulo}}\"></app-header>\n\n<ion-content>\n\n</ion-content>\n";
       /***/
     }
   }]);

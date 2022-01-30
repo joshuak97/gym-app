@@ -47,7 +47,7 @@ const routes = [
     },
     {
         path: 'clases',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_clases_clases_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/clases/clases.module */ 87086)).then(m => m.ClasesPageModule)
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_inicio_inicio_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/inicio/inicio.module */ 83633)).then(m => m.InicioPageModule)
     },
     {
         path: 'horarios',
@@ -62,6 +62,18 @@ const routes = [
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_mis-resultados_mis-resultados_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/mis-resultados/mis-resultados.module */ 10696)).then(m => m.MisResultadosPageModule)
     },
     {
+        path: 'benchmark-metcon',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_benchmark-metcon_benchmark-metcon_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/benchmark-metcon/benchmark-metcon.module */ 29631)).then(m => m.MisResultadosPageModule)
+    },
+    {
+        path: 'gymnastic',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_gymnastic_gymnastic_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/gymnastic/gymnastic.module */ 5426)).then(m => m.GymnasticPageModule)
+    },
+    {
+        path: 'weightlifting',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_weightlifting_weightlifting_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/weightlifting/weightlifting.module */ 77278)).then(m => m.WeightliftingPageModule)
+    },
+    {
         path: 'whiteboard',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_whiteboard_whiteboard_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/whiteboard/whiteboard.module */ 54564)).then(m => m.WhiteboardPageModule)
     },
@@ -70,8 +82,88 @@ const routes = [
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_timer_timer_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/timer/timer.module */ 93242)).then(m => m.TimerPageModule)
     },
     {
-        path: 'admin/:acceso',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_admin_admin_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/admin/admin.module */ 61496)).then(m => m.AdminPageModule)
+        path: 'dashboard',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_dashboard_dashboard_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/dashboard/dashboard.module */ 71659)).then(m => m.DashboardPageModule)
+    },
+    {
+        path: 'informes',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_informes_informes_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/informes/informes.module */ 63917)).then(m => m.InformesPageModule)
+    },
+    {
+        path: 'calendario',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_calendario_calendario_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/calendario/calendario.module */ 37711)).then(m => m.CalendarioPageModule)
+    },
+    {
+        path: 'clientes',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_clientes_clientes_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/clientes/clientes.module */ 28953)).then(m => m.ClientesPageModule)
+    },
+    {
+        path: 'workouts',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_workouts_workouts_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/workouts/workouts.module */ 59978)).then(m => m.WorkoutsPageModule)
+    },
+    {
+        path: 'one-on-one',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_one-on-one_one-on-one_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/one-on-one/one-on-one.module */ 87234)).then(m => m.OneOnOnePageModule)
+    },
+    {
+        path: 'configuraciones',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_configuraciones_configuraciones_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/configuraciones/configuraciones.module */ 70839)).then(m => m.ConfiguracionesPageModule)
+    },
+    {
+        path: 'facturacion',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_facturacion_facturacion_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/facturacion/facturacion.module */ 26433)).then(m => m.FacturacionPageModule)
+    },
+    {
+        path: 'engagement',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_engagement_engagement_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/engagement/engagement.module */ 77777)).then(m => m.EngagementPageModule)
+    },
+    {
+        path: 'avisos',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_avisos_avisos_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/avisos/avisos.module */ 37481)).then(m => m.AvisosPageModule)
+    },
+    {
+        path: 'invita-gana',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_invita-gana_invita-gana_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/invita-gana/invita-gana.module */ 42049)).then(m => m.InvitaGanaPageModule)
+    },
+    {
+        path: 'punto-venta',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_punto-venta_punto-venta_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/punto-venta/punto-venta.module */ 39721)).then(m => m.PuntoVentaPageModule)
+    },
+    {
+        path: 'ventajas-ofertas',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_ventajas-ofertas_ventajas-ofertas_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/ventajas-ofertas/ventajas-ofertas.module */ 54427)).then(m => m.VentajasOfertasPageModule)
+    },
+    {
+        path: 'cuenta',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_cuenta_cuenta_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/cuenta/cuenta.module */ 94178)).then(m => m.CuentaPageModule)
+    },
+    {
+        path: 'programas',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_programas_programas_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/programas/programas.module */ 27851)).then(m => m.ProgramasPageModule)
+    },
+    {
+        path: 'horarios-admin',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_horarios-admin_horarios-admin_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/horarios-admin/horarios-admin.module */ 18955)).then(m => m.HorariosAdminPageModule)
+    },
+    {
+        path: 'cuotas',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_cuotas_cuotas_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/cuotas/cuotas.module */ 92500)).then(m => m.CuotasPageModule)
+    },
+    {
+        path: 'descuentos',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_descuentos_descuentos_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/descuentos/descuentos.module */ 68136)).then(m => m.DescuentosPageModule)
+    },
+    {
+        path: 'medios-pago',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_medios-pago_medios-pago_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/medios-pago/medios-pago.module */ 50480)).then(m => m.MediosPagoPageModule)
+    },
+    {
+        path: 'impuestos',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_impuestos_impuestos_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/impuestos/impuestos.module */ 94758)).then(m => m.ImpuestosPageModule)
+    },
+    {
+        path: 'terminos-condiciones',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_terminos-condiciones_terminos-condiciones_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/terminos-condiciones/terminos-condiciones.module */ 46267)).then(m => m.TerminosCondicionesPageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -135,15 +227,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": function() { return /* binding */ AppModule; }
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ 64762);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 37716);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ 39075);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ 39895);
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic/angular */ 80476);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 64762);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser */ 39075);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ionic/angular */ 80476);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 55041);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ 90158);
 /* harmony import */ var _components_components_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/components.module */ 45642);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ 91841);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ 91841);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 38583);
+/* harmony import */ var _angular_common_locales_es_MX__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/locales/es-MX */ 73394);
+/* harmony import */ var _angular_common_locales_es_MX__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_es_MX__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -153,14 +248,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+(0,_angular_common__WEBPACK_IMPORTED_MODULE_4__.registerLocaleData)((_angular_common_locales_es_MX__WEBPACK_IMPORTED_MODULE_3___default()), 'es');
 let AppModule = class AppModule {
 };
-AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
-    (0,_angular_core__WEBPACK_IMPORTED_MODULE_4__.NgModule)({
+AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_6__.NgModule)({
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
         entryComponents: [],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.IonicModule.forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _components_components_module__WEBPACK_IMPORTED_MODULE_2__.ComponentsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_7__.HttpClientModule],
-        providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_8__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.IonicRouteStrategy }],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__.BrowserModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_8__.IonicModule.forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _components_components_module__WEBPACK_IMPORTED_MODULE_2__.ComponentsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_9__.HttpClientModule],
+        providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_10__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_8__.IonicRouteStrategy },
+            { provide: _angular_core__WEBPACK_IMPORTED_MODULE_6__.LOCALE_ID, useValue: 'es' }],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
     })
 ], AppModule);
@@ -246,7 +345,7 @@ let HeaderComponent = class HeaderComponent {
     }
     ngOnInit() {
         this.menu.enable(true, 'first');
-        if (this.titulo == "") {
+        if (this.titulo === '' || this.titulo === 'Dashboard') {
             this.inicio = true;
         }
         else {
@@ -306,18 +405,29 @@ let MenuComponent = class MenuComponent {
         this.menu = menu;
         this.route = route;
         this.service = service;
+        this.menuPrincipal = true;
+        this.tituloMenu = 'Menu Principal';
     }
     ngOnInit() {
         this.getOpcionesMenu();
     }
-    openFirst() {
-        this.menu.enable(true, 'first');
-        this.menu.open('first');
+    cerrarMenu() {
+        this.menu.close('first').then();
     }
     cargarMenu() {
         this.route.params.subscribe(params => {
             params['acceso'] && params['acceso'] === 'admin' ? this.getOpcionesMenuAdmin() : this.getOpcionesMenu();
         });
+    }
+    mostrarMenuPrincipal() {
+        this.menuPrincipal = true;
+        this.tituloMenu = 'Menu Principal';
+        this.getOpcionesMenu();
+    }
+    mostrarMenuAdministrador() {
+        this.menuPrincipal = false;
+        this.tituloMenu = 'Menu Administrador';
+        this.getOpcionesMenuAdmin();
     }
     getOpcionesMenu() {
         this.service.getMenuOpts().then(opciones => {
@@ -328,6 +438,9 @@ let MenuComponent = class MenuComponent {
         this.service.getMenuOptsAdmin().then(opciones => {
             this.componentes = opciones;
         });
+    }
+    desplegar(i) {
+        this.componentes[i].hijosVisibles = !this.componentes[i].hijosVisibles;
     }
 };
 MenuComponent.ctorParameters = () => [
@@ -754,7 +867,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header no-border=\"true\" translucent=\"true\">\n  <ion-toolbar>\n    <ion-buttons slot=\"start\"> \n      <ion-menu-button color=\"primary\" menu=\"first\" *ngIf=\"inicio\"></ion-menu-button>\n      <ion-back-button defaultHref=\"/\" icon=\"chevron-back-outline\" text=\"Atras\" *ngIf=\"!inicio\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"text-center\">{{titulo|titlecase}}</ion-title>\n  <ion-buttons slot=\"end\">\n    <ion-button color=\"primary\">\n      <ion-icon name=\"person\"></ion-icon>\n    </ion-button>\n  </ion-buttons>  \n  </ion-toolbar>\n</ion-header>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header translucent=\"true\">\n  <ion-toolbar>\n    <ion-buttons slot=\"start\"> \n      <ion-menu-button color=\"primary\" menu=\"first\" *ngIf=\"inicio\"></ion-menu-button>\n      <ion-back-button defaultHref=\"/\" icon=\"chevron-back-outline\" text=\"atras\" *ngIf=\"!inicio\"></ion-back-button>\n    </ion-buttons>\n    <ion-title color=\"primary\">CrossGym AR7</ion-title>\n  <ion-buttons slot=\"end\">\n    <ion-button color=\"primary\">\n      <ion-icon name=\"person\"></ion-icon>\n    </ion-button>\n  </ion-buttons>  \n  </ion-toolbar>\n</ion-header>\n");
 
 /***/ }),
 
@@ -766,7 +879,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-menu side=\"start\" menuId=\"first\" contentId=\"main\">\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-title>Menu Principal</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n       <ion-menu-toggle>\n       <ion-list *ngFor=\"let opcion of componentes\">\n        <ion-item [routerLink]=\"opcion.redirectTo\"><ion-icon [name]=\"opcion.icon\" slot=\"start\" color=\"primary\"></ion-icon><ion-label color=\"primary\">{{opcion.name}}</ion-label></ion-item>\n       </ion-list>\n      </ion-menu-toggle>\n     \n    </ion-content>\n  </ion-menu>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-menu side=\"start\" menuId=\"first\" contentId=\"main\">\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-title>{{tituloMenu}}</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n\n<!-- opciones menu       -->\n<!-- mostrar menu principal -->      \n      <ion-list>\n          <ion-item routerLink=\"/inicio\" *ngIf=\"!menuPrincipal\" (click)=\"mostrarMenuPrincipal()\">\n            <ion-icon name=\"arrow-back\" slot=\"start\" color=\"primary\">\n            </ion-icon>\n            <ion-label color=\"primary\">Menu Principal</ion-label>\n          </ion-item>\n        </ion-list>\n       <ion-list *ngFor=\"let opcion of componentes;let i = index\">\n<!--           Se muestra si tiene hijos (Es dropdown).-->\n        <ion-item  *ngIf=\"opcion.hijos.length>0\" (click)=\"desplegar(i)\">\n          <ion-icon [name]=\"opcion.icon\" slot=\"start\" color=\"primary\"></ion-icon>\n          <ion-label color=\"primary\">{{opcion.name}}</ion-label>\n        </ion-item>\n           <!--           Se muestra si no tiene hijos (No es dropdown).-->\n           <ion-item [routerLink]=\"opcion.redirectTo\" *ngIf=\"opcion.hijos.length == 0\" (click)=\"cerrarMenu()\">\n               <ion-icon [name]=\"opcion.icon\" slot=\"start\" color=\"primary\"></ion-icon>\n               <ion-label color=\"primary\">{{opcion.name}}</ion-label>\n           </ion-item>\n               <ion-list *ngIf=\"opcion.hijosVisibles\">\n                   <ion-item *ngFor=\"let subOpcion of opcion.hijos\" [routerLink]=\"subOpcion.redirectTo\" (click)=\"cerrarMenu()\">\n                       <ion-icon [name]=\"subOpcion.icon\" slot=\"start\" color=\"primary\"></ion-icon>\n                       <ion-label color=\"primary\">{{subOpcion.name}}</ion-label>\n                   </ion-item>\n           </ion-list>\n       </ion-list>\n<!-- mostrar menu de Administrador -->\n      <ion-list>\n        <ion-item routerLink=\"/dashboard\" *ngIf=\"menuPrincipal\" (click)=\"mostrarMenuAdministrador()\">\n          <ion-icon name=\"construct\" slot=\"start\" color=\"primary\">\n          </ion-icon>\n          <ion-label color=\"primary\">Administrador </ion-label>\n        </ion-item>\n       </ion-list>\n    </ion-content>\n  </ion-menu>\n");
 
 /***/ })
 

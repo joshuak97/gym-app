@@ -105,11 +105,18 @@ __webpack_require__.r(__webpack_exports__);
 
 let InicioPage = class InicioPage {
     constructor() {
-        this.componentes = [];
-        // Constructor Vacio
+        this.avisos = [];
+        this.visualizarAvisos = true;
+        this.visualizarClases = false;
     }
     ngOnInit() {
         // Metodo vacio
+    }
+    mostrarAvisos() {
+        this.visualizarAvisos = !this.visualizarAvisos;
+    }
+    mostrarClases() {
+        this.visualizarClases = !this.visualizarClases;
     }
 };
 InicioPage.ctorParameters = () => [];
@@ -145,7 +152,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<app-header titulo=\"\" inicio=\"1\"></app-header>\n\n<ion-content>\n  <ion-list *ngFor=\"let componente of componentes\">\n    <ion-item [routerLink]=\"componente.redirectTo\" detail>\n      <ion-icon [name]=\"componente.icon\" slot=\"start\"></ion-icon> \n      <ion-label>{{componente.name}}</ion-label>\n    </ion-item>\n  </ion-list>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<app-header titulo=\"\"></app-header>\n\n<ion-content>\n  <ion-card >\n    <ion-item color=\"warning\" (click)=\"mostrarAvisos();\">\n      <ion-label color=\"light\">Avisos</ion-label>\n      <ion-icon *ngIf=\"visualizarAvisos\" name=\"arrow-up-circle\" color=\"light\" slot=\"end\"></ion-icon>\n      <ion-icon *ngIf=\"!visualizarAvisos\" name=\"arrow-down-circle\" color=\"light\" slot=\"end\"></ion-icon>\n    </ion-item>\n\n    <ion-card-content *ngIf=\"visualizarAvisos\">\n      <div>\n        <div><strong>Aviso 1:</strong></div>\n        <p> This is content, without any paragraph or header tags,\n          within an ion-card-content element.\n        </p>\n        <p> This is content, without any paragraph or header tags,\n          within an ion-card-content element.</p>\n        <p> This is content, without any paragraph or header tags,\n          within an ion-card-content element.</p>\n        <ion-img src=\"/assets/shapes.svg\"></ion-img>\n      </div>\n    </ion-card-content>\n  </ion-card>\n<!--              Selector de programa                -->\n  <div class=\"ion-margin-top ion-padding\">\n      <ion-label>Programa:</ion-label>\n      <ion-select placeholder=\"Seleccione un programa\">\n      <ion-select-option value=\"1\">CROSSFIT</ion-select-option>\n      <ion-select-option value=\"2\">CROSSFIT KIDS</ion-select-option>\n      <ion-select-option value=\"3\">CYCLING</ion-select-option>\n      </ion-select>\n  </div>\n  <!--             Selector de fecha             -->\n  <div class=\"ion-padding-horizontal\">\n    <ion-label>Fecha:</ion-label>\n    <ion-datetime placeholder=\"DD/MM/YYYY\" [(ngModel)]=\"fechaSelected\" display-format=\"DD/MMMM/YYYY\" id=\"fecha\"></ion-datetime>\n  </div>\n  <!--             Selector de clase             -->\n  <div class=\"ion-padding-horizontal\" *ngIf=\"fechaSelected\">\n    <ion-label>Clase:</ion-label>\n    <ion-select placeholder=\"Seleccione un programa\" [(ngModel)]=\"claseSelected\" id=\"clase\">\n      <ion-select-option value=\"1\">7:00 Area de Cycling</ion-select-option>\n      <ion-select-option value=\"2\">8:00 Area de Cycling</ion-select-option>\n      <ion-select-option value=\"3\">9:00 Area de Cycling</ion-select-option>\n    </ion-select>\n  </div>\n\n  <!--             Selector de cliente             -->\n  <div class=\"ion-padding-horizontal\" *ngIf=\"claseSelected\">\n    <ion-label>Cliente:</ion-label>\n    <ion-select placeholder=\"Seleccione un programa\">\n      <ion-select-option value=\"1\">ADELA RIOS GARCIA</ion-select-option>\n      <ion-select-option value=\"2\">ADRIAN GARCIA GARCIA</ion-select-option>\n      <ion-select-option value=\"3\">ADRIAN GERON AGUILERA</ion-select-option>\n    </ion-select>\n  </div>\n  <!--              clases disponibles            -->\n<ion-card>\n  <ion-item color=\"danger\" (click)=\"mostrarClases();\">\n    <ion-label color=\"light\">No se encontraron clases </ion-label>\n    <ion-icon *ngIf=\"visualizarClases\" name=\"arrow-up-circle\" color=\"light\" slot=\"end\"></ion-icon>\n    <ion-icon *ngIf=\"!visualizarClases\" name=\"arrow-down-circle\" color=\"light\" slot=\"end\"></ion-icon>\n  </ion-item>\n  <ion-card-content *ngIf=\"visualizarClases\"></ion-card-content>\n</ion-card>\n</ion-content>\n");
 
 /***/ })
 
