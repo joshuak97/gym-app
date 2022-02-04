@@ -10,13 +10,15 @@
       "icon": "analytics-outline",
       "name": " Informes",
       "redirectTo": "/informes",
-      "hijos": [ {
+      "hijos": [
+
+        {
         "icon": "radio-button-off-outline",
         "name": " Métricas",
         "redirectTo": "/metricas",
         "hijos": [],
         "hijosVisibles": false
-      },
+       },
        {
           "icon": "radio-button-off-outline",
           "name": " Clientes en riesgo",
@@ -59,21 +61,115 @@
       "icon": "calendar-outline",
       "name": " Calendario",
       "redirectTo": "/calendario",
-      "hijos": [],
+      "hijos": [
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Clases",
+          "redirectTo": "/clases-admin",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Coaches",
+          "redirectTo": "/coaches",
+          "hijos": [],
+          "hijosVisibles": false
+        }
+      ],
       "hijosVisibles": false
     },
     {
       "icon": "people-outline",
       "name": " Clientes",
       "redirectTo": "/clientes",
-      "hijos": [],
+      "hijos": [
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Todos",
+          "redirectTo": "/todos",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Suscripciones",
+          "redirectTo": "/suscripciones",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Pausas",
+          "redirectTo": "/pausas",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Leads",
+          "redirectTo": "/leads",
+          "hijos": [],
+          "hijosVisibles": false
+        }
+      ],
       "hijosVisibles": false
     },
     {
       "icon": "flash-outline",
       "name": " Workouts",
       "redirectTo": "/workouts",
-      "hijos": [],
+      "hijos": [
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Nuevo",
+          "redirectTo": "/nuevo-workout",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Calendario",
+          "redirectTo": "/calendario-workout",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Programación Automática",
+          "redirectTo": "/programacion-automatica-workout",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Tipos de Componente",
+          "redirectTo": "/tipos-componente-workout",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Benchmark Metcon",
+          "redirectTo": "/benchmark-metcon-workout",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Gymnastics",
+          "redirectTo": "/gymnastics-workout",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Weightlifting",
+          "redirectTo": "/weightlifting-workout",
+          "hijos": [],
+          "hijosVisibles": false
+        }
+      ],
       "hijosVisibles": false
     },
     {
@@ -151,14 +247,51 @@
       "icon": "cash-outline",
       "name": " Facturación",
       "redirectTo": "/informes",
-      "hijos": [],
+      "hijos": [
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Facturas",
+          "redirectTo": "/facturas",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Gastos",
+          "redirectTo": "/gastos",
+          "hijos": [],
+          "hijosVisibles": false
+        }
+      ],
       "hijosVisibles": false
     },
     {
       "icon": "mail-outline",
       "name": " Engagement",
       "redirectTo": "/engagement",
-      "hijos": [],
+      "hijos": [
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Manual",
+          "redirectTo": "/manual-engagement",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Automatico",
+          "redirectTo": "/automatico-engagement",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Correos enviados",
+          "redirectTo": "/correos-enviados-engagement",
+          "hijos": [],
+          "hijosVisibles": false
+        }
+      ],
       "hijosVisibles": false
     },
     {
@@ -186,7 +319,29 @@
       "icon": "cart-outline",
       "name": " Punto de Venta",
       "redirectTo": "/punto-venta",
-      "hijos": [],
+      "hijos": [
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Nuevo Pedido",
+          "redirectTo": "/nuevo-pedido-tpv",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Pedidos",
+          "redirectTo": "/pedidos-tpv",
+          "hijos": [],
+          "hijosVisibles": false
+        },
+        {
+          "icon": "radio-button-off-outline",
+          "name": " Productos",
+          "redirectTo": "/productos-tpv",
+          "hijos": [],
+          "hijosVisibles": false
+        }
+      ],
       "hijosVisibles": false
     },
     {

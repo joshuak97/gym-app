@@ -150,6 +150,90 @@ const routes: Routes = [
   {
     path: 'terminos-condiciones',
     loadChildren: () => import('./pages/terminos-condiciones/terminos-condiciones.module').then( m => m.TerminosCondicionesPageModule)
+  },
+  {
+    path: 'clases-admin',
+    loadChildren: () => import('./pages/clases-admin/clases-admin.module').then( m => m.ClasesAdminPageModule)
+  },
+  {
+    path: 'coaches',
+    loadChildren: () => import('./pages/coaches/coaches.module').then( m => m.CoachesPageModule)
+  },
+  {
+    path: 'todos',
+    loadChildren: () => import('./pages/todos/todos.module').then( m => m.TodosPageModule)
+  },
+  {
+    path: 'suscripciones',
+    loadChildren: () => import('./pages/suscripciones/suscripciones.module').then( m => m.SuscripcionesPageModule)
+  },
+  {
+    path: 'pausas',
+    loadChildren: () => import('./pages/pausas/pausas.module').then( m => m.PausasPageModule)
+  },
+  {
+    path: 'leads',
+    loadChildren: () => import('./pages/leads/leads.module').then( m => m.LeadsPageModule)
+  },
+  {
+    path: 'nuevo-workout',
+    loadChildren: () => import('./pages/nuevo-workout/nuevo-workout.module').then( m => m.NuevoWorkoutPageModule)
+  },
+  {
+    path: 'calendario-workout',
+    loadChildren: () => import('./pages/calendario-workout/calendario-workout.module').then( m => m.CalendarioWorkoutPageModule)
+  },
+  {
+    path: 'programacion-automatica-workout',
+    loadChildren: () => import('./pages/programacion-automatica-workout/programacion-automatica-workout.module').then( m => m.ProgramacionAutomaticaWorkoutPageModule)
+  },
+  {
+    path: 'tipos-componente-workout',
+    loadChildren: () => import('./pages/tipos-componente-workout/tipos-componente-workout.module').then( m => m.TiposComponenteWorkoutPageModule)
+  },
+  {
+    path: 'benchmark-metcon-workout',
+    loadChildren: () => import('./pages/benchmark-metcon-workout/benchmark-metcon-workout.module').then( m => m.BenchmarkMetconWorkoutPageModule)
+  },
+  {
+    path: 'gymnastics-workout',
+    loadChildren: () => import('./pages/gymnastics-workout/gymnastics-workout.module').then( m => m.GymnasticsWorkoutPageModule)
+  },
+  {
+    path: 'weightlifting-workout',
+    loadChildren: () => import('./pages/weightlifting-workout/weightlifting-workout.module').then( m => m.WeightliftingWorkoutPageModule)
+  },
+  {
+    path: 'facturas',
+    loadChildren: () => import('./pages/facturas/facturas.module').then( m => m.FacturasPageModule)
+  },
+  {
+    path: 'gastos',
+    loadChildren: () => import('./pages/gastos/gastos.module').then( m => m.GastosPageModule)
+  },
+  {
+    path: 'manual-engagement',
+    loadChildren: () => import('./pages/manual-engagement/manual-engagement.module').then( m => m.ManualEngagementPageModule)
+  },
+  {
+    path: 'automatico-engagement',
+    loadChildren: () => import('./pages/automatico-engagement/automatico-engagement.module').then( m => m.AutomaticoEngagementPageModule)
+  },
+  {
+    path: 'correos-enviados-engagement',
+    loadChildren: () => import('./pages/correos-enviados-engagement/correos-enviados-engagement.module').then( m => m.CorreosEnviadosEngagementPageModule)
+  },
+  {
+    path: 'nuevo-pedido-tpv',
+    loadChildren: () => import('./pages/nuevo-pedido-tpv/nuevo-pedido-tpv.module').then( m => m.NuevoPedidoTpvPageModule)
+  },
+  {
+    path: 'pedidos-tpv',
+    loadChildren: () => import('./pages/pedidos-tpv/pedidos-tpv.module').then( m => m.PedidosTpvPageModule)
+  },
+  {
+    path: 'productos-tpv',
+    loadChildren: () => import('./pages/productos-tpv/productos-tpv.module').then( m => m.ProductosTpvPageModule)
   }
 ];
 
