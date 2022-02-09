@@ -8,6 +8,9 @@ import { CuentaPageRoutingModule } from './cuenta-routing.module';
 
 import { CuentaPage } from './cuenta.page';
 import {ComponentsModule} from "../../components/components.module";
+import {PerfilComponent} from "./components/perfil/perfil.component";
+import {ConfigComponent} from "./components/config/config.component";
+import {FacturasComponent} from "./components/facturas/facturas.component";
 
 @NgModule({
   imports: [
@@ -15,8 +18,8 @@ import {ComponentsModule} from "../../components/components.module";
     FormsModule,
     IonicModule,
     CuentaPageRoutingModule,
-      ComponentsModule
+    ComponentsModule
   ],
-  declarations: [CuentaPage]
+  declarations: [CuentaPage,PerfilComponent,ConfigComponent,FacturasComponent]
 })
 export class CuentaPageModule {}

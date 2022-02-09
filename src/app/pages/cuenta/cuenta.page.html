@@ -1,5 +1,35 @@
 <app-header titulo="{{titulo}}"></app-header>
 
-<ion-content>
 
+<ion-content>
+    <!--Inicia segmentacion de la pagina-->
+    <ion-toolbar>
+        <ion-segment scrollable="" (ionChange)="cambiarPagina($event)" value="perfil">
+            <ion-segment-button value="perfil">
+                <ion-label>Perfil</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="config">
+                <ion-label>Config.</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="facturas">
+                <ion-label>Facturas</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+    <!--Temina segmentacion de la pagina-->
+   <ion-card>
+       <ion-card-content>
+    <!--Comienza Segmento Perfil-->
+   <app-perfil *ngIf="pagina === 'perfil'"></app-perfil>
+    <!--Termina Segmento Perfil-->
+    <!--Inicia Segmento Config-->
+    <app-config *ngIf="pagina === 'config'"></app-config>
+    <!--Termina Segmento Config-->
+    <!--Inicia Segmento Facturas-->
+    <app-facturas *ngIf="pagina === 'facturas'"></app-facturas>
+    <!--Termina Segmento Facturas-->
+       </ion-card-content>
+   </ion-card>
 </ion-content>
+
+

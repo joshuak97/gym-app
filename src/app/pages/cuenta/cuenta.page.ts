@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Perfil} from "../../models/perfil";
 
 @Component({
   selector: 'app-cuenta',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CuentaPage implements OnInit {
     titulo = 'Cuenta';
+    pagina = 'perfil';
 
   constructor() {
     // void
@@ -16,4 +18,7 @@ export class CuentaPage implements OnInit {
     // void
   }
 
+  cambiarPagina(ev: any) {
+    this.pagina = ev.detail.value;
+  }
 }

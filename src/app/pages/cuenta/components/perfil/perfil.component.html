@@ -1,0 +1,125 @@
+
+<!--  Comienza Grid-->
+  <ion-grid class="ion-margin-top">
+<!--    Comienza Row-->
+    <ion-row>
+<!--      Comienza Foto de perfil-->
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6" class="ion-margin-top">
+        <ion-img [src]="mostrarFotoPerfil()"></ion-img>
+        <ion-input type="file" ></ion-input>
+      </ion-col>
+      <!--      Termina Foto de perfil-->
+      <!--      Comienza Formulario-->
+      <ion-col size="12" size-lg="9" size-md="8" size-sm="6">
+      <!--    Comienza Grid de formulario-->
+        <ion-grid>
+        <!--     Comienza row de formulario-->
+        <ion-row>
+        <!--        Comienza Nombre-->
+        <ion-col size="12" size-lg="6" size-md="12" size-sm="12">
+          <ion-item >
+            <ion-label position="floating">*Nombre</ion-label>
+            <ion-input [(ngModel)]="perfil.nombreGym"></ion-input>
+          </ion-item >
+        </ion-col>
+        <!--        Termina nombre-->
+        <!--        Comienza Nombre Fiscal-->
+        <ion-col size="12" size-lg="6" size-md="12" size-sm="12">
+          <ion-item >
+            <ion-label position="floating">Nombre Fiscal</ion-label>
+            <ion-input [(ngModel)]="perfil.nombreFiscalGym"></ion-input>
+          </ion-item >
+        </ion-col>
+        <!--        Termina nombre Fiscal-->
+        <!--        Comienza RFC         -->
+        <ion-col size="12" size-lg="3" size-md="12" size-sm="12">
+          <ion-item >
+            <ion-label position="floating">RFC</ion-label>
+            <ion-input [(ngModel)]="perfil.rfcGym"></ion-input>
+          </ion-item >
+        </ion-col>
+        <!--       Termina nombre RFC  -->
+        <!--        Comienza Correo electrónico-->
+        <ion-col size="12" size-lg="6" size-md="12" size-sm="12">
+          <ion-item>
+            <ion-label position="floating">*Email: </ion-label>
+            <ion-input [(ngModel)]="perfil.correoElectronicoGym" name="email"
+                       pattern="^([a-za-z0-9_\-\.]+)@([a-za-z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required=""></ion-input>
+          </ion-item>
+        </ion-col>
+        <!--        Termina Correo electrónico-->
+          <!--        Comienza Telefono         -->
+          <ion-col size="12" size-lg="3" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">*Teléfono</ion-label>
+              <ion-input type="number" [(ngModel)]="perfil.telefonoGym"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina nombre Teléfono  -->
+          <!--        Comienza Dirección         -->
+          <ion-col size="12" size-lg="8" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">Dirección</ion-label>
+              <ion-input [(ngModel)]="perfil.direccionGym"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina Dirección  -->
+          <!--        Comienza Codigo Postal         -->
+          <ion-col size="12" size-lg="4" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">Codigo Postal</ion-label>
+              <ion-input [(ngModel)]="perfil.codigoPostalGYm"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina Codigo Postal  -->
+          <!--        Comienza Ciudad         -->
+          <ion-col size="12" size-lg="4" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">Ciudad</ion-label>
+              <ion-input [(ngModel)]="perfil.ciudadGym"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina Ciudad  -->
+          <!--        Comienza Estado (Provincia)         -->
+          <ion-col size="12" size-lg="4" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">Provincia</ion-label>
+              <ion-input [(ngModel)]="perfil.estadoGym"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina Dirección  -->
+          <!--        Comienza pais   -->
+          <ion-col size="12" size-lg="4" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">Pais</ion-label>
+              <ion-input [(ngModel)]="perfil.paisGym"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina Pais  -->
+          <!--        Comienza Website   -->
+          <ion-col size="12" size-lg="6" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">Website</ion-label>
+              <ion-input [(ngModel)]="perfil.websiteGym"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina Website  -->
+          <!--        Comienza pagina de facebook (facebook page)  -->
+          <ion-col size="12" size-lg="6" size-md="12" size-sm="12">
+            <ion-item >
+              <ion-label position="floating">Facebook Page</ion-label>
+              <ion-input [(ngModel)]="perfil.facebookPageGym"></ion-input>
+            </ion-item >
+          </ion-col>
+          <!--       Termina pagina de facebook (facebook page)  -->
+        </ion-row>
+        <!--   Termina Row de Formulario-->
+        </ion-grid>
+        <!--        Termina Grid de formulario-->
+      </ion-col>
+<!--        Termina Formulario-->
+    </ion-row>
+<!--    Termina Row-->
+  </ion-grid>
+<!--  Termina Grid-->
+
