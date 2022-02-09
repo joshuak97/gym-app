@@ -8,6 +8,7 @@ import { HorariosAdminPageRoutingModule } from './horarios-admin-routing.module'
 
 import { HorariosAdminPage } from './horarios-admin.page';
 import {ComponentsModule} from "../../components/components.module";
+import { HorariosAdmin } from 'src/app/models/horarios-admin';
 
 @NgModule({
   imports: [
@@ -19,4 +20,7 @@ import {ComponentsModule} from "../../components/components.module";
   ],
   declarations: [HorariosAdminPage]
 })
-export class HorariosAdminPageModule {}
+export class HorariosAdminPageModule {
+  horarioadmin = {} as HorariosAdmin;
+
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HorariosAdmin } from 'src/app/models/horarios-admin';
 
 @Component({
   selector: 'app-horarios-admin',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./horarios-admin.page.scss'],
 })
 export class HorariosAdminPage implements OnInit {
+
+  horarios = {} as HorariosAdmin;
 
   titulo = 'Horarios';
 

@@ -10,21 +10,17 @@
                 <ion-card-subtitle>Filtrar</ion-card-subtitle>
               </ion-card-header>
               <ion-label class="ion-margin-top ion-padding strong">Programas:</ion-label>
-        <ion-select placeholder="Todos">
-            <ion-select-option value="1">Emir Morales aaaaaaaaa</ion-select-option>
-            <ion-select-option value="2">Yareth Barrientos</ion-select-option>
-            <ion-select-option value="3">Ximena Presa Juarez</ion-select-option>
+        <ion-select placeholder="Todos" [(ngModel)]="cuotas">
+            <ion-select-option [value]="nombrePrograma"></ion-select-option>
         </ion-select>
         <ion-label class="ion-margin-top ion-padding strong">Tipo de venta:</ion-label>
-        <ion-select placeholder="Todos">
+        <ion-select placeholder="Todos"  [(ngModel)]="cuotas">
             <ion-select-option value="1">Emir Morales aaaaaaaaa</ion-select-option>
-            <ion-select-option value="2">Yareth Barrientos</ion-select-option>
-            <ion-select-option value="3">Ximena Presa Juarez</ion-select-option>
         </ion-select>
 
         <ion-item>
             <ion-label position="floating" >Nombre</ion-label>
-            <ion-input type="text" ></ion-input>
+            <ion-input [(ngModel)]="cuotas.nombreCuota"></ion-input>
           </ion-item>
           <div class="ion-margin-top ion-padding">
           <ion-button color="danger">Filtrar</ion-button>
@@ -55,19 +51,19 @@
                 <ion-row>
                   <ion-col>
                     <ion-text>
-                        Clases en vivo
+                        {{cuotas.nombreCuota}}
                     </ion-text>
                   </ion-col>
             
                     <ion-col>
                       <ion-text>
-                        $100.00
+                        {{cuotas.precio}}
                       </ion-text>
                     </ion-col>
 
                     <ion-col>
                       <ion-text class="strong">
-                       30 creditos mensual
+                        {{cuotas.descripcion}}
                       </ion-text>
                     </ion-col>
               

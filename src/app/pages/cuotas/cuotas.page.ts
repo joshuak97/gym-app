@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cuotas } from 'src/app/models/cuotas';
 
 @Component({
   selector: 'app-cuotas',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cuotas.page.scss'],
 })
 export class CuotasPage implements OnInit {
+  cuotas = {} as Cuotas;
+
 
   titulo = 'Cuotas'
 
