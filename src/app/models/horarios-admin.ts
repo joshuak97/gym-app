@@ -1,8 +1,30 @@
 export class HorariosAdmin{
-    id_gym: number;
+    idHorario: number;
+    limiteReservas: number;
     horaInicio: string;
     horaFin: string;
-    coach: string;
-    sala: string;
+    idPrograma: number;
+    idUsuario: number;
+    contarReservas: number;
+    lunes: number;
+    martes: number;
+    miercoles: number;
+    jueves: number;
+    viernes: number;
+    sabado: number;
+    domingo: number;
+    idSala: number;
+    restringirDisponibilidad: number;
+    fechaInicioDisponibilidad: number;
+    fechaFinDisponibilidad: number;
+    esLive: number;
+    enlaceClaseLive: string;
+    cambiarConfiguracionHorario: number;
+    reservarDesdeHorario: number;
+    reservarHastaHorario: number;
+    unidadTiempoDesde: string;
+    unidadTiempoHasta: string;
+    cancelarReservaDesde: number;
+    unidadTiempoCancelarReserva: string;
+    idGym: number;
    }
-   

@@ -1,8 +1,9 @@
 export class Descuentos{
-    id_gym: number;
+    idDescuento: number;
     nombreDescuento: string;
     porcentajeDescuento: string;
     efectivoDescuento: string;
     ciclosFacturacion: string;
+    numeroCiclosFacturacion: number;
+    idGym: number;
    }
-   
