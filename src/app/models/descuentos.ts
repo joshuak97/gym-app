@@ -4,6 +4,6 @@ export class Descuentos{
     porcentajeDescuento: string;
     efectivoDescuento: string;
     ciclosFacturacion: string;
-    numeroCiclosFacturacion: number;
+    numeroCiclosCacturacion: number;
     idGym: number;
    }
