@@ -1,6 +1,6 @@
 export class TerminosCondiciones {
-    idTerminosCondiciones: number;
+    id_terminos_condiciones: number;
     descripcion: string;
     estatus: string;
-    idGym: number;
+    id_gym: number;
 }

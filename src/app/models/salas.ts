@@ -1,5 +1,5 @@
 export class Salas {
-    idSala: number;
-    nombreSala: string;
-    idGym: number;
+    id_sala: number;
+    nombre_sala: string;
+    id_gym: number;
 }

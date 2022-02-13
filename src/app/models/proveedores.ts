@@ -1,6 +1,6 @@
 export class Proveedores {
-    idProveedor: number;
-    nombreProveedor: string;
-    identificacionFiscal: string;
-    idGym: number;
+    id_proveedor: number;
+    nombre_proveedor: string;
+    identificacion_fiscal: string;
+    id_gym: number;
 }

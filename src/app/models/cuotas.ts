@@ -1,9 +1,9 @@
 export class Cuotas{
-    idCuota: number;
-    nombreCuota: string;
+    id_cuota: number;
+    nombre_cuota: string;
     precio: string;
-    periodoFacturacion: string;
-    idImpuesto: number;
+    periodo_facturacion: string;
+    id_impuesto: number;
     descripcion: string;
-    idGym: number;
+    id_gym: number;
    }

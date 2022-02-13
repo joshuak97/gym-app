@@ -1,10 +1,10 @@
 export class Emails {
-    idEmail: number;
+    id_email: number;
     de: string;
     para: string;
     programas: string;
-    totalDestinatarios: string;
+    total_destinatarios: string;
     asunto: string; 
     mensaje: string;
-    idGym: number;
+    id_gym: number;
 }

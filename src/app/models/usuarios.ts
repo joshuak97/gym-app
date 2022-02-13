@@ -1,16 +1,16 @@
 export class Usuarios {
-    idUsuario: number; 
-    nombreCompleto: string;
+    id_usuario: number; 
+    nombre_completo: string;
     nickname: string;
-    correoElectronico: string;
+    correo_electronico: string;
     password: string;
-    telefonoUsuario: number;
+    telefono_usuario: number;
     genero: string;
-    fechaNacimiento: string;
+    fecha_nacimiento: string;
     estatura: string; 
     peso: string;
     direccion: string;
-    codigoPostal: string;
+    codigo_postal: string;
     ciudad: string;
     estado: string;
     pais: string;
@@ -18,5 +18,5 @@ export class Usuarios {
     idioma: string;
     permisos: string;
     estatus: string;
-    idGym: number;
+    id_gym: number;
 }

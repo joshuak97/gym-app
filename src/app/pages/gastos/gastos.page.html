@@ -1,9 +1,118 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>gastos</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="{{titulo}}"></app-header>
 
 <ion-content>
+    <div class="ion-margin-top ion-padding">
+        <ion-list-header>Gastos</ion-list-header>
+        <!-- card de gastos con totales-->
+    <ion-card>
+        <ion-card-content>
+            <ion-grid>
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text  >Medio de pago</ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text  >Total</ion-text>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                           $9998.00
+                        </ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text >
+                         $9998.00
+                      </ion-text>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+            Total:
+        </ion-card-content>
+    </ion-card>
+    <!--Tabla de gastos-->
+            <ion-card>
+                <ion-card-content class="ion-text-left">
+            <ion-grid class="ion-text-left">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text>Numero</ion-text>
+                    </ion-col>
 
+                    <ion-col>
+                        <ion-text>N. Fact.</ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text>Fecha</ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text>Proov.</ion-text>
+                  </ion-col>
+                  
+                <ion-col>
+                  <ion-text>Estado</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-text>Impuestos</ion-text>
+            </ion-col>
+            <ion-col>
+              <ion-text>Total</ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text></ion-text>
+        </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text>
+                           Mensual
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text>
+                            132
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text  >
+                            $4421212121
+                        </ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text>
+                          132
+                      </ion-text>
+                  </ion-col>
+                  <ion-col>
+                    <ion-text>
+                        132
+                    </ion-text>
+                </ion-col>
+                <ion-col>
+                  <ion-text>
+                      132
+                  </ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-text>
+                    132
+                </ion-text>
+            </ion-col>
+            <ion-col>
+              <ion-text>
+                  <div class="ion-text-end">
+                      <ion-button size="small" color="light"> +</ion-button>
+                  </div>
+              </ion-text>
+          </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+    </div>
 </ion-content>

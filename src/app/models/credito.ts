@@ -1,8 +1,8 @@
 export class Credito {
-    idCredito: number;
+    id_credito: number;
     periodo: string;
-    restringirUsoCreditos: string;
-    horaInicioRestringir: string;
-    horaFinRestringir: string;
-    idCuota: number;
+    restringir_uso_creditos: string;
+    hora_inicio_restringir: string;
+    hora_fin_restringir: string;
+    id_cuota: number;
 }

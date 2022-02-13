@@ -1,4 +1,118 @@
 <app-header titulo="{{titulo}}"></app-header>
+
 <ion-content>
+
+    <!--              Selector de Suscripciones                -->
+    <div class="ion-margin-top ion-padding">
+        <ion-list-header>Suscripciones</ion-list-header>
+
+        <ion-select placeholder="Buscar por cuota">
+            <ion-select-option></ion-select-option>
+        </ion-select>
+
+        <ion-select placeholder="Buscar por cliente">
+            <ion-select-option value="1">Emir Morales aaaaaaaaa</ion-select-option>
+        </ion-select>
+        <!-- card total activos-->
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle class="ion-text-center">TOTAL ACTIVAS</ion-card-subtitle>
+            </ion-card-header>
+            <ion-grid class="ion-text-center">
+                <ion-row>
+                    <ion-col>
+                        <ion-text>
+                            326
+                        </ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card>
+        <!--card de detalles del cliente-->
+        <ion-card>
+            <ion-card-content>
+                <ion-grid class="ion-text-left">
+                    <ion-row class="header-row">
+                        <ion-col>
+                            <ion-text class="strong">Cliente</ion-text>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-text class="strong">Email</ion-text>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-text class="strong">Cuota</ion-text>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-text class="strong">Renov. aut.</ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">Fecha Ini.</ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">Fecha caduc.</ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">Estado</ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong"></ion-text>
+                        </ion-col>
+                    </ion-row>
+
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-text>
+                                Plan de entrenamiento
+                            </ion-text>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-text>
+                                Pablo Mendoza
+                            </ion-text>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-text class="strong">
+                                Rutina en casa
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">
+                                Activo
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">
+                                Activo
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">
+                                Activo
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text class="strong">
+                                Activo
+                            </ion-text>
+                        </ion-col>
+                        <ion-col>
+                            <ion-text>
+                                <div class="ion-text-end">
+                                    <ion-button size="small" color="light"> +</ion-button>
+                                </div>
+                            </ion-text>
+                        </ion-col>
+                    </ion-row>
+
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+    </div>
 
 </ion-content>

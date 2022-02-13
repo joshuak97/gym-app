@@ -1,11 +1,11 @@
 export class Gastos {
-    idgasto: number;
-    fechaGasto: string;
-    numeroFactura: string;
-    idProveedor: number;
-    idImpuesto: number;
-    totalGasto: string;
+    id_gasto: number;
+    fecha_gasto: string;
+    numero_factura: string;
+    id_proveedor: number;
+    id_impuesto: number;
+    total_gasto: string;
     estado: string;
-    idGym: number;
-    descripcionGasto: string;
+    id_gym: number;
+    descripcion_gasto: string;
 }

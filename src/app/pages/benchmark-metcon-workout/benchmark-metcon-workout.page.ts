@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BenchmarkMetconWorkoutPage implements OnInit {
 
+  titulo = 'Benchmark-Metcon';
+  visualizarWhiteBoard = false;
+  componente: any;
   constructor() { }
 
   ngOnInit() {

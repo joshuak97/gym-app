@@ -1,4 +1,4 @@
 export class UnidadesMedida {
-    idUnidadMedida: number;
-    descripcionUnidadMedida: string;
+    id_unidad_medida: number;
+    descripcion_unidad_medida: string;
 }

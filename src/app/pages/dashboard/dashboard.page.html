@@ -1,5 +1,27 @@
-<app-header titulo="{{titulo}}" inicio="1"></app-header>
+<app-header titulo="{{titulo}}"></app-header>
 
 <ion-content>
-
+  <div class="ion-margin-top ion-padding">
+    <ion-list-header>Dashboard</ion-list-header>
+    <!--card de clientes-->
+    <ion-card>
+      <ion-card-content class="ion-text-center">
+        <ion-grid class="ion-text-center">
+          <ion-row class="header-row">
+            <ion-col>
+              <ion-text class="strong">Clientes</ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-text>
+                0/1000
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+    <!-- termina-->
+  </div>
 </ion-content>

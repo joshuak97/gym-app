@@ -1,5 +1,5 @@
 export class Configuraciones {
-    idConfiguracion: number;
-    idUnidadMedida: number;
-    idGym: number;
+    id_configuracion: number;
+    id_unidad_medida: number;
+    id_gym: number;
 }

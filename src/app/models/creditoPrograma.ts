@@ -1,5 +1,5 @@
 export class CreditoPrograma {
-    idCreditoPrograma: number;
-    idCredito: number;
-    idPrograma: number;
+    id_credito_programa: number;
+    id_credito: number;
+    id_programa: number;
 }

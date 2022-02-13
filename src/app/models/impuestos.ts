@@ -1,6 +1,6 @@
 export class Impuestos {
-    idImpuesto: number;
-    nombreImpuesto: string;
+    id_impuesto: number;
+    nombre_impuesto: string;
     porcentaje: string;
-    idGym: number;
+    id_gym: number;
 }

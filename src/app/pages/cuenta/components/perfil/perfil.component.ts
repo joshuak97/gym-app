@@ -17,10 +17,10 @@ export class PerfilComponent implements OnInit {
 
 
   mostrarFotoPerfil() {
-    if (!this.perfil.logoGym) {
+    if (!this.perfil.logo_gym) {
       return '/assets/shapes.svg';
     } else {
-      return this.perfil.logoGym;
+      return this.perfil.logo_gym;
     }
   }
 

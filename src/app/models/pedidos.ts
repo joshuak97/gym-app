@@ -1,10 +1,10 @@
 export class Pedidos {
-    idPedido: number;
-    fechaPedido: string;
-    idUsuario: number;
-    idMetodoPago: number;
-    totalCompra: string;
-    totalVenta: string;
-    totalPedido: string;
-    idGym: number;
+    id_pedido: number;
+    fecha_pedido: string;
+    id_usuario: number;
+    id_metodo_pago: number;
+    total_compra: string;
+    total_venta: string;
+    total_pedido: string;
+    id_gym: number;
 }

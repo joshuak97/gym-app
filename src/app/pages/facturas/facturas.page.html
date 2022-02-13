@@ -1,9 +1,130 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>facturas</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="{{titulo}}"></app-header>
 
 <ion-content>
+    <div class="ion-margin-top ion-padding">
+        <ion-list-header>Facturas</ion-list-header>
+        <!-- card de facturas con totales-->
+    <ion-card>
+        <ion-card-content>
+            <ion-grid>
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">Medio de pago</ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text class="strong">Total</ion-text>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-text >
+                           $9998.00
+                        </ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text >
+                         $9998.00
+                      </ion-text>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+            Total:
+        </ion-card-content>
+    </ion-card>
 
+            <!-- card de estado de la factura-->
+            <ion-card>
+              <ion-card-content>
+                  <ion-grid>
+                      <ion-row class="header-row">
+                          <ion-col>
+                              <ion-text class="strong">Estado</ion-text>
+                          </ion-col>
+                          <ion-col>
+                            <ion-text class="strong">Total</ion-text>
+                        </ion-col>
+                      </ion-row>
+                      <ion-row>
+                          <ion-col>
+                              <ion-text >
+                                 $9998.00
+                              </ion-text>
+                          </ion-col>
+                          <ion-col>
+                            <ion-text >
+                               $9998.00
+                            </ion-text>
+                        </ion-col>
+                      </ion-row>
+                  </ion-grid>
+                  Total:
+              </ion-card-content>
+          </ion-card>
+    <!--Tabla facturas-->
+            <ion-card>
+                <ion-card-content class="ion-text-left">
+            <ion-grid class="ion-text-left">
+                <ion-row class="header-row">
+                    <ion-col>
+                        <ion-text class="strong">Numero</ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">Fecha</ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">Cliente</ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text class="strong">Cuota</ion-text>
+                  </ion-col>
+                  <ion-col>
+                    <ion-text class="strong">Med. Pago</ion-text>
+                </ion-col>
+                <ion-col>
+                  <ion-text class="strong">Estado</ion-text>
+              </ion-col>
+                </ion-row>
+
+
+                <ion-row>
+                    <ion-col>
+                        <ion-text>
+                           Mensual
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text>
+                            132
+                        </ion-text>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-text class="strong">
+                            $4421212121
+                        </ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text>
+                          132
+                      </ion-text>
+                  </ion-col>
+                  <ion-col>
+                    <ion-text>
+                        132
+                    </ion-text>
+                </ion-col>
+                <ion-col>
+                  <ion-text>
+                      132
+                  </ion-text>
+              </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+    </div>
 </ion-content>

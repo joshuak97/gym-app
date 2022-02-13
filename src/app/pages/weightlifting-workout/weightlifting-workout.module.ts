@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { WeightliftingWorkoutPageRoutingModule } from './weightlifting-workout-routing.module';
 
 import { WeightliftingWorkoutPage } from './weightlifting-workout.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WeightliftingWorkoutPageRoutingModule
+    WeightliftingWorkoutPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [WeightliftingWorkoutPage]
 })

@@ -1,4 +1,4 @@
 export class MetodosPago {
-    idMetodoPago: number;
-    nombreMetodoPago: string;
+    id_metodo_pago: number;
+    nombre_metodo_pago: string;
 }
