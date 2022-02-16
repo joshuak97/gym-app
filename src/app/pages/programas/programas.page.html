@@ -7,6 +7,15 @@
         <ion-list-header>Programas</ion-list-header>
         <ion-card>
             <ion-card-content>
+                <ion-card-header class="">
+                    <ion-text>
+                        <div class="ion-text-end">
+                            <ion-button (click)="abrirModal()"  size="small" color="warning">
+                                <ion-icon name="add" color="light"></ion-icon>
+                            </ion-button>
+                        </div>
+                    </ion-text>
+                </ion-card-header>
                 <ion-grid class="ion-text-left">
                     <ion-row class="header-row">
                         <ion-col>
@@ -27,11 +36,7 @@
                         </ion-col>
 
                         <ion-col>
-                            <ion-text>
-                                <div class="ion-text-end">
-                                    <ion-button size="small" color="light"> +</ion-button>
-                                </div>
-                            </ion-text>
+
                         </ion-col>
                     </ion-row>
 

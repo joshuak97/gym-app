@@ -143,13 +143,6 @@
       "hijos": [
         {
           "icon": "radio-button-off-outline",
-          "name": " Cuenta",
-          "redirectTo": "/cuenta",
-          "hijos": [],
-          "hijosVisibles": false
-        },
-        {
-          "icon": "radio-button-off-outline",
           "name": " Programas",
           "redirectTo": "/programas",
           "hijos": [],

@@ -234,6 +234,14 @@ const routes: Routes = [
   {
     path: 'productos-tpv',
     loadChildren: () => import('./pages/productos-tpv/productos-tpv.module').then( m => m.ProductosTpvPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'nuevo-programa',
+    loadChildren: () => import('./pages/nuevo-programa/nuevo-programa.module').then( m => m.NuevoProgramaPageModule)
   }
 ];
 
