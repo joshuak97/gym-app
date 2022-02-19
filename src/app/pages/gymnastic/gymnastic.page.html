@@ -1,16 +1,15 @@
 <app-header titulo="{{titulo}}"></app-header>
-<ion-content>
-
+<ion-content color="gray-light">
     <!--              Selector de reservas                -->
     <div class="ion-margin-top ion-padding">
-        <ion-list-header>Gymnastic</ion-list-header>
+        <ion-list-header color="gray-light">Gymnastic</ion-list-header>
         <ion-select placeholder="Seleccione un cliente">
             <ion-select-option value="1">Emir Morales aaaaaaaaa</ion-select-option>
             <ion-select-option value="2">Yareth Barrientos</ion-select-option>
             <ion-select-option value="3">Ximena Presa Juarez</ion-select-option>
         </ion-select>
         <div  class="ion-text-end">
-        <ion-button size="small" color="warning"> +</ion-button>
+        <ion-button size="small" color="light">+</ion-button>
     </div>
         <ion-select placeholder="Seleccione un componente"> 
             <ion-select-option value="1">1 mile run</ion-select-option>
@@ -20,8 +19,8 @@
     </div>
     
     <div class="ion-margin-top ion-padding">
-        <ion-card>
-            <ion-item color="danger">
+        <ion-card color="gray">
+            <ion-item color="warning">
                 <ion-label color="light"> {{componente || 'No se encontraron resultados' }}</ion-label>
                 <ion-icon  *ngIf="visualizarWhiteBoard" name="arrow-up-circle" color="light" slot="end"></ion-icon>
                 <ion-icon  *ngIf="!visualizarWhiteBoard" name="arrow-down-circle" color="light" slot="end"></ion-icon>
@@ -60,7 +59,7 @@
                         <ion-col>
                             <ion-text>
                                 <div class="ion-text-end">
-                                    <ion-button size="small" color="light"> +</ion-button>
+                                    <ion-button size="small" color="light">+</ion-button>
                                 </div>
                             </ion-text>
                         </ion-col>

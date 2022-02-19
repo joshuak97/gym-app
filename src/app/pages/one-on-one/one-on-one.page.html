@@ -1,14 +1,14 @@
 <app-header titulo="{{titulo}}"></app-header>
 
-<ion-content>
+<ion-content color="gray-light">
 
     <!--              Selector de reservas                -->
     <div class="ion-margin-top ion-padding">
-        <ion-list-header>One-on-one</ion-list-header>
-        <ion-card>
+        <ion-list-header color="gray-light">One-on-one</ion-list-header>
+        <ion-card color="gray">
             <ion-card-header>
-                <ion-card-subtitle>Filtrar</ion-card-subtitle>
-            </ion-card-header>
+                <ion-label color="light">Filtrar</ion-label>
+              </ion-card-header>
             <ion-label class="ion-margin-top ion-padding strong">Estado:</ion-label>
             <ion-select placeholder="Todos">
                 <ion-select-option value="1">Activo</ion-select-option>
@@ -26,15 +26,15 @@
                 <ion-select-option value="2">Crossfit</ion-select-option>
                 <ion-select-option value="3">Cardio</ion-select-option>
             </ion-select>
-            <ion-item>
-                <ion-label position="floating">Nombre</ion-label>
-                <ion-input type="text"></ion-input>
+            <ion-label class="ion-margin-top ion-padding strong">Nombre</ion-label>
+            <ion-item translucent color="gray">
+                <ion-input type="text" placeholder="Ingrese su nombre"></ion-input>
             </ion-item>
             <div class="ion-margin-top ion-padding">
-                <ion-button color="danger">Filtrar</ion-button>
+                <ion-button color="warning">Filtrar</ion-button>
             </div>
         </ion-card>
-        <ion-card>
+        <ion-card color=gray>
             <ion-card-content>
                 <ion-grid class="ion-text-left">
                     <ion-row class="header-row">

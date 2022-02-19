@@ -1,9 +1,9 @@
 <app-header titulo="{{titulo}}"></app-header>
 
-<ion-content>
+<ion-content color="gray-light">
     <!--              Selector de programa                -->
     <div class="ion-margin-top ion-padding">
-        <ion-label>Programa:</ion-label>
+        <ion-list-header color="gray-light">Programa:</ion-list-header>
         <ion-select (ionChange)="mostrarResultadosWhiteboard()" [(ngModel)]="programaSelected" placeholder="Seleccione un programa">
             <ion-select-option value="1">CROSSFIT</ion-select-option>
             <ion-select-option value="2">CROSSFIT KIDS</ion-select-option>
@@ -16,8 +16,8 @@
         <ion-datetime (ionChange)="mostrarResultadosWhiteboard()" placeholder="DD/MM/YYYY" [(ngModel)]="fechaSelected" id="fecha" display-format="DD/MMMM/YYYY"></ion-datetime>
     </div>
 <!--                   WhiteBoard-->
-    <ion-card>
-        <ion-item color="danger" (click)="mostrarWthiteBoard();">
+    <ion-card color="gray">
+        <ion-item color="warning" (click)="mostrarWthiteBoard();">
             <ion-label color="light"> {{fechaSelected | date: 'EEEE, MMMM d, y' || 'No se encontraron resultados' }}</ion-label>
             <ion-icon *ngIf="visualizarWhiteBoard" name="arrow-up-circle" color="light" slot="end"></ion-icon>
             <ion-icon *ngIf="!visualizarWhiteBoard" name="arrow-down-circle" color="light" slot="end"></ion-icon>

@@ -1,10 +1,10 @@
 <app-header titulo="{{titulo}}"></app-header>
 
-<ion-content>
+<ion-content color="gray-light">
 
     <!--              Selector de reservas                -->
     <div class="ion-margin-top ion-padding">
-        <ion-label>Mis Reservas:</ion-label>
+        <ion-list-header color="gray-light">Mis Reservas:</ion-list-header>
         <ion-select placeholder="Seleccione un cliente">
             <ion-select-option value="1">Emir Morales aaaaaaaaa</ion-select-option>
             <ion-select-option value="2">Yareth Barrientos</ion-select-option>
@@ -14,10 +14,10 @@
     <!--               Desplegable de los creditos                   -->
     <div class="ion-margin-top ion-padding">
         <ion-label>Créditos:</ion-label>
-        <ion-card>
-            <ion-card-header>
-                <ion-card-subtitle>Destination</ion-card-subtitle>
-            </ion-card-header>
+        <ion-card color="gray">
+            <ion-item color="warning" >
+                <ion-label color="light">Destination</ion-label>
+              </ion-item>
             <ion-card-content>
                 <p>Programa:</p>
                 <p>Créditos utilizados:</p>
@@ -28,8 +28,8 @@
         </ion-card>
 </div>
 <!--              reservas disponibles            -->
-<ion-card>
-    <ion-item color="danger" (click)="mostrarClases();">
+<ion-card color="gray">
+    <ion-item color="warning" (click)="mostrarClases();">
         <ion-label color="light">Ninguna reserva encontrada </ion-label>
         <ion-icon *ngIf="visualizarClases" name="arrow-up-circle" color="light" slot="end"></ion-icon>
         <ion-icon *ngIf="!visualizarClases" name="arrow-down-circle" color="light" slot="end"></ion-icon>
