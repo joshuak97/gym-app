@@ -8,14 +8,14 @@
 
 <!-- opciones menu       -->
 <!-- mostrar menu principal -->      
-      <ion-list color="gray">
+      <div>
           <ion-item  color="gray" routerLink="/inicio" *ngIf="!menuPrincipal" (click)="mostrarMenuPrincipal()">
             <ion-icon name="arrow-back" slot="start" color="warning">
             </ion-icon>
             <ion-label color="warning">Menu Principal</ion-label>
           </ion-item>
-        </ion-list>
-       <ion-list color="gray" *ngFor="let opcion of componentes;let i = index">
+        </div>
+       <div *ngFor="let opcion of componentes;let i = index">
 <!--           Se muestra si tiene hijos (Es dropdown).-->
         <ion-item  color="gray"  *ngIf="opcion.hijos.length>0" (click)="desplegar(i)">
           <ion-icon [name]="opcion.icon" slot="start" color="warning"></ion-icon>
@@ -26,20 +26,19 @@
                <ion-icon [name]="opcion.icon" slot="start" color="warning"></ion-icon>
                <ion-label color="warning">{{opcion.name}}</ion-label>
            </ion-item>
-               <ion-list color="gray-light" *ngIf="opcion.hijosVisibles">
+               <div color="gray-light" *ngIf="opcion.hijosVisibles">
                    <ion-item color="gray-light" *ngFor="let subOpcion of opcion.hijos" [routerLink]="subOpcion.redirectTo" (click)="cerrarMenu()">
                        <ion-icon [name]="subOpcion.icon" slot="start" color="warning"></ion-icon>
                        <ion-label color="warning">{{subOpcion.name}}</ion-label>
                    </ion-item>
-           </ion-list>
-       </ion-list>
+           </div>
+       </div>
 <!-- mostrar menu de Administrador -->
-      <ion-list color="gray">
+
         <ion-item color="gray" routerLink="/dashboard" *ngIf="menuPrincipal" (click)="mostrarMenuAdministrador()">
           <ion-icon name="construct" slot="start" color="warning">
           </ion-icon>
           <ion-label color="warning">Administrador </ion-label>
         </ion-item>
-       </ion-list>
     </ion-content>
   </ion-menu>

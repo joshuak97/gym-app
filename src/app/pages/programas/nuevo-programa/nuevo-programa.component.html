@@ -1,58 +1,60 @@
 <ion-header>
-<ion-toolbar class="ion-text-center">{{titulo}}</ion-toolbar>
+<ion-toolbar color="dark" class="ion-text-center">
+  <ion-title color="warning">{{titulo}}</ion-title>
+</ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-item>
+  <ion-item color="gray">
     <ion-label position="floating">Nombre</ion-label>
     <ion-input [(ngModel)]="programa.nombre_programa"></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-label>Permitir mas de una reserva por dia:</ion-label>
     <ion-checkbox [(ngModel)]="programa.permitir_reserva_multiple" color="warning"></ion-checkbox>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-label>Permitir cancelar fuera de plazo configurado:</ion-label>
     <ion-checkbox [(ngModel)]="programa.permitir_cancelar_destiempo" color="warning"></ion-checkbox>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-label>Ocultar numero de reservas:</ion-label>
     <ion-checkbox [(ngModel)]="programa.ocultar_numero_reservas" color="warning"></ion-checkbox>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-label position="floating">Reservar desde:</ion-label>
     <ion-input type="number" [(ngModel)]="programa.reservar_desde"></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-select placeholder="Tiempo" [ngModel]="programa.tiempo_reservar_desde">
       <ion-select-option>Dia</ion-select-option>
       <ion-select-option>Hora</ion-select-option>
       <ion-select-option>Minuto</ion-select-option>
     </ion-select>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-label position="floating">Reservar hasta:</ion-label>
     <ion-input type="number" [(ngModel)]="programa.reservar_hasta"></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-select placeholder="Tiempo" [ngModel]="programa.tiempo_reservar_hasta">
       <ion-select-option>Dia</ion-select-option>
       <ion-select-option>Hora</ion-select-option>
       <ion-select-option>Minuto</ion-select-option>
     </ion-select>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-label position="floating">Cancelar reserva:</ion-label>
     <ion-input type="number" [(ngModel)]="programa.cambiar_reserva_desde"></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item color="gray">
     <ion-select placeholder="Tiempo" [ngModel]="programa.tiempo_cancelar_desde">
       <ion-select-option>Dia</ion-select-option>
       <ion-select-option>Hora</ion-select-option>
       <ion-select-option>Minuto</ion-select-option>
     </ion-select>
   </ion-item>
-  <ion-item class="ion-text-center">
-    <ion-button color="success" (click)="guardarPrograma()">Guardar</ion-button>
-    <ion-button color="danger" (click)="cerrarModal()">cancelar</ion-button>
+  <ion-item class="ion-text-center" color="gray">
+    <ion-button color="warning" (click)="guardarPrograma()">Guardar</ion-button>
+    <ion-button color="light" (click)="cerrarModal()">cancelar</ion-button>
   </ion-item>
 </ion-content>

@@ -20,9 +20,10 @@ export class ProgramasPage implements OnInit {
 
   async abrirModal() {
     const modal = await this.modalController.create({
-      component: NuevoProgramaComponent
+      component: NuevoProgramaComponent,
     });
-    return await modal.present();
+    modal.style.color= 'dark';
+    return modal.present();
   }
 
   async editarModal(programa: Programas) {
@@ -32,7 +33,7 @@ export class ProgramasPage implements OnInit {
         preguntas: programa
       }
     });
-    return await modal.present();
+    return modal.present();
   }
 
 }
