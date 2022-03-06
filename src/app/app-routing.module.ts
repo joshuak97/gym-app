@@ -242,6 +242,10 @@ const routes: Routes = [
   {
     path: 'nuevo-programa',
     loadChildren: () => import('./pages/nuevo-programa/nuevo-programa.module').then( m => m.NuevoProgramaPageModule)
+  },
+  {
+    path: 'nuevo-workout',
+    loadChildren: () => import('./pages/nuevo-workout/nuevo-workout.module').then( m => m.NuevoWorkoutPageModule)
   }
 ];
 

@@ -1,9 +1,51 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tipos-componente-workout</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="{{titulo}}"></app-header>
 
-<ion-content>
+<ion-content color="gray-light">
+
+  <div class="ion-margin-top ion-padding">
+    <ion-list-header color="gray-light">Tipos de Componente</ion-list-header>
+    <div  class="ion-text-end">
+      <ion-button size="small" color="warning"> +</ion-button>
+  </div>
+    <ion-card color=gray>
+      <ion-card-content>
+        <ion-grid class="ion-text-left">
+          <ion-row class="header-row">
+            <ion-col>
+              <ion-text class="strong">Nombre</ion-text>
+            </ion-col>
+
+            <ion-col>
+              <ion-text class="strong">Global</ion-text>
+            </ion-col>
+            <ion-col>
+              <ion-text class="strong"></ion-text>
+            </ion-col>
+          </ion-row>
+
+
+          <ion-row>
+            <ion-col>
+              <ion-text>
+                Juan jose Mendoza
+              </ion-text>
+            </ion-col>
+
+            <ion-col>
+              <ion-text>
+                Si
+              </ion-text>
+            </ion-col>
+            <ion-text>
+              <div class="ion-text-end">
+                <ion-button size="small" color="light"> +</ion-button>
+              </div>
+            </ion-text>
+          </ion-row>
+
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
 
 </ion-content>

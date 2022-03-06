@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nuevo-workout.page.scss'],
 })
 export class NuevoWorkoutPage implements OnInit {
-
+  titulo = 'Nuevo WorkOut';
   constructor() { }
 
   ngOnInit() {

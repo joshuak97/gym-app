@@ -1,9 +1,51 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>nuevo-workout</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="{{titulo}}"></app-header>
 
-<ion-content>
+<ion-content color="gray-light">
+  <div class="ion-margin-top ion-padding">
+    
+    <ion-label class="ion-margin-top ion-padding strong">Programa:</ion-label>
+    <ion-select placeholder="Todos">
+      <ion-select-option value="1">Activo</ion-select-option>
+      <ion-select-option value="2">Inactivo</ion-select-option>
+    </ion-select>
+    <!--             Selector de fecha             -->
+    <div class="ion-padding-horizontal">
+      <ion-label>Fecha:</ion-label>
+      <ion-datetime placeholder="DD/MM/YYYY" id="fecha" display-format="DD/MMMM/YYYY"></ion-datetime>
+    </div>
 
+    <!--checkbox-->
+    <div class="ion-margin-top ion-padding">
+      <ion-label>Visibilidad del workout</ion-label>
+      <ion-item color="gray">
+        <ion-label>Día Anterior</ion-label>
+        <ion-checkbox color="warning" checked slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-item color="gray">
+        <ion-label>Mismo Día</ion-label>
+        <ion-checkbox color="warning" checked slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-item color="gray">
+        <ion-label>Siempre Visible</ion-label>
+        <ion-checkbox color="warning" checked slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-label>Fecha cuando el workout estará visible para los clientes</ion-label>
+    </div>
+    <div class="form-group ion-margin-top ion-padding">
+      <label for="comment">Nota para los atletas</label>
+      <textarea class="form-control" cols="2" rows="5" id="comment"></textarea>
+      <ion-label>Utilice este espacio para notas del workout, por ejemplo traer comba o zapatillas para correr
+      </ion-label>
+    </div>
+    <div class="form-group ion-margin-top ion-padding">
+      <label for="comment">Nota para los coaches</label>
+      <textarea class="form-control" cols="2" rows="5" id="comment"></textarea>
+      <ion-label>Para que no sean visibles en clases, Cossgym deberá estar en modo protegido</ion-label>
+    </div>
+    <div class="ion-margin-top ion-padding">
+      <ion-button color="warning">Guardar</ion-button>
+      <ion-button color="danger">Cancelar</ion-button>
+    </div>
+
+  </div>
 </ion-content>
