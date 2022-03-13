@@ -9,11 +9,25 @@ export class DashboardPage implements OnInit {
 
   titulo = 'Dashboard';
 
-  constructor() { 
-    //
+  avisos = [];
+
+  visualizarAvisos = true;
+  visualizarClases = false;
+  fechaSelected: string;
+  claseSelected: number;
+
+  constructor() {}
+
+  ngOnInit() {
+  // Metodo vacio
   }
 
-  ngOnInit() {//
+  mostrarAvisos() {
+    this.visualizarAvisos = !this.visualizarAvisos;
+  }
+
+  mostrarClases(){
+    this.visualizarClases = !this.visualizarClases;
   }
 
 }

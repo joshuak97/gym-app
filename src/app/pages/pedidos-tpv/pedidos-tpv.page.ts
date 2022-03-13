@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pedidos-tpv.page.scss'],
 })
 export class PedidosTpvPage implements OnInit {
-
+  titulo = 'Pedidos';
   constructor() { }
 
   ngOnInit() {

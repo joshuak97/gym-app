@@ -2,14 +2,17 @@
 
 <ion-content color="gray-light">
   <div class="ion-margin-top ion-padding">
-    <ion-list-header>Dashboard</ion-list-header>
+    <ion-list-header color="gray-light">Dashboard</ion-list-header>
     <!--card de clientes-->
     <ion-card color="gray">
       <ion-card-content class="ion-text-center">
         <ion-grid class="ion-text-center">
           <ion-row class="header-row">
             <ion-col>
-              <ion-text class="strong">Clientes</ion-text>
+              <ion-text class="strong">Clientes Activos</ion-text>
+            </ion-col>
+            <ion-col>
+              <ion-text class="strong">Clientes Inactivos</ion-text>
             </ion-col>
           </ion-row>
           <ion-row>
@@ -18,10 +21,162 @@
                 0/1000
               </ion-text>
             </ion-col>
+            <ion-col>
+              <ion-text>
+                0/999
+              </ion-text>
+            </ion-col>
           </ion-row>
         </ion-grid>
       </ion-card-content>
     </ion-card>
     <!-- termina-->
+
+    <ion-card color="gray">
+      <ion-card-content class="ion-text-left">
+        <ion-grid class="ion-text-left">
+          <ion-row class="header-row">
+            <ion-col>
+              <ion-text class="strong">Suscripciones</ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-text>
+                280
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-col>
+          <ion-text>8% de disminución en 30 días</ion-text>
+        </ion-col>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="gray">
+      <ion-card-content class="ion-text-left">
+        <ion-grid class="ion-text-left">
+          <ion-row class="header-row">
+            <ion-col>
+              <ion-text>Facturación</ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-text>
+                $51,134.52
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-col>
+          <ion-text>8% de aumento en 30 días</ion-text>
+        </ion-col>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="gray">
+      <ion-card-content class="ion-text-left">
+        <ion-grid class="ion-text-left">
+          <ion-row class="header-row">
+            <ion-col>
+              <ion-text class="strong">Fscturación del día</ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-text>
+                $0.00
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card color="gray">
+            <ion-item color="warning" (click)="mostrarAvisos();">
+              <ion-label color="light">Cumpleaños</ion-label>
+              <ion-icon *ngIf="visualizarAvisos" name="arrow-up-circle" color="light" slot="end"></ion-icon>
+              <ion-icon *ngIf="!visualizarAvisos" name="arrow-down-circle" color="light" slot="end"></ion-icon>
+            </ion-item>
+
+            <ion-card-content *ngIf="visualizarAvisos">
+              <div>
+                <div><strong>Aviso 1:</strong></div>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.
+                </p>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.</p>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.</p>
+                <ion-img src="/assets/icon/logo2.jpeg"></ion-img>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card color="gray">
+            <ion-item color="warning" (click)="mostrarAvisos();">
+              <ion-label color="light">Proxima clase</ion-label>
+              <ion-icon *ngIf="visualizarAvisos" name="arrow-up-circle" color="light" slot="end"></ion-icon>
+              <ion-icon *ngIf="!visualizarAvisos" name="arrow-down-circle" color="light" slot="end"></ion-icon>
+            </ion-item>
+
+            <ion-card-content *ngIf="visualizarAvisos">
+              <div>
+                <div><strong>Aviso 1:</strong></div>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.
+                </p>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.</p>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.</p>
+                <ion-img src="/assets/icon/logo2.jpeg"></ion-img>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card color="gray">
+            <ion-item color="warning" (click)="mostrarAvisos();">
+              <ion-label color="light">Caduca esta semana</ion-label>
+              <ion-icon *ngIf="visualizarAvisos" name="arrow-up-circle" color="light" slot="end"></ion-icon>
+              <ion-icon *ngIf="!visualizarAvisos" name="arrow-down-circle" color="light" slot="end"></ion-icon>
+            </ion-item>
+
+            <ion-card-content *ngIf="visualizarAvisos">
+              <div>
+                <div><strong>Aviso 1:</strong></div>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.
+                </p>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.</p>
+                <p> This is content, without any paragraph or header tags,
+                  within an ion-card-content element.</p>
+                <ion-img src="/assets/icon/logo2.jpeg"></ion-img>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
